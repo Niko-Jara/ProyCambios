@@ -1,0 +1,428 @@
+﻿/*BODY*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.container {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.nav {
+    padding-left: 1000px;
+}
+
+#piepag {
+    background-color: black;
+    padding: 20px;
+}
+
+#piepag p {
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+/*PANTALLA DE LOGIN*/
+
+.main-head {
+    height: 250px;
+    background: #FFF;
+}
+
+.sidenav {
+    height: 120%;
+    background-image: url(../img/business.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    padding-top: 13%;
+    padding-bottom: 13%;
+}
+
+.main {
+    padding: 0px 10px;
+    padding-top: 17%;
+    padding-left: 120px;
+    margin-bottom:50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login-form {
+        margin-top: 10%;
+    }
+
+    .register-form {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        margin-left: 40%;
+    }
+
+    .sidenav {
+        width: 40%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form {
+    }
+
+    .register-form {
+        margin-top: 20%;
+    }
+}
+
+.login-main-text {
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.login-main-text h2 {
+    font-weight: 300;
+}
+
+#btnLogin {
+    background-color: #000 !important;
+    color: #fff;
+    margin-left: 250px;
+    margin-top: 55px;
+}
+
+
+/*PANTALLA DE CAMBIOS*/
+
+#tito {
+    margin: 0px;
+    margin-top: 60px;
+    width: 150px;
+}
+
+.list-group a {
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+}
+
+.list-group a:hover {
+    -webkit-box-shadow: 0px 6px 35px 0px #DFDFEA;
+    -moz-box-shadow: 0px 6px 35px 0px #DFDFEA;
+     box-shadow: 0px 6px 35px 0px #DFDFEA;
+}
+
+.cortar {
+    padding-left: 35px;
+}
+
+#formula {
+    background-image: url(../img/man.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#contform {
+    border: 1px solid white;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    height: 950px;
+    background-image: url(../img/tex.jpg);
+    padding-left: 10px;
+    padding-right: 25px;
+    box-shadow: 7px 10px #878585;
+}
+
+#contform legend {
+    margin-top: 30px;
+}
+
+#contform input {
+    margin-right: 10px;
+    }
+#contform label {
+    margin-top:12px;
+    }
+#causa {
+    margin-top: 40px;
+}
+
+ #btnLimpiar {
+    background-color: black;
+    margin-top: 70px;
+    margin-left: 1030px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white;
+    }
+
+#btnLimpiar:hover {
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+}
+
+#btnGuardar {
+    background-color: black;
+    margin-top: 70px;
+    margin-left: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+}
+
+ #btnGuardar:hover {  
+     -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+     -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+      box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+}
+/*PrincipalModif*/
+#formPrinmod, #consul, #secuser {
+    border: 1px solid white;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    height: 1000px;
+    background-image: url(../img/tex.jpg);
+    padding-left: 10px;
+    padding-right: 25px;
+    box-shadow: 7px 10px #878585;
+}
+    #formPrinmod legend {
+        margin-top: 10px;
+    }
+
+    #formPrinmod input {
+        margin-right: 10px;
+    }
+#titIde input, #titIde label {
+    margin-left: 15px;
+
+}
+#formPrinmod label {
+    margin-top: 12px;
+}
+#btnMod, #btnElim, #btnCrear, #btnReg, #btnEliminar {
+    margin-top: 12px;
+    background-color: black;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+/*PANTALLA DE MODIFICACIONES*/
+#tito {
+    margin: 0px;
+    margin-top: 60px;
+    width: 150px;
+}
+
+.list-group a {
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+}
+
+.list-group a:hover {
+     -webkit-box-shadow: 0px 6px 35px 0px #DFDFEA;
+     -moz-box-shadow: 0px 6px 35px 0px #DFDFEA;
+     box-shadow: 0px 6px 35px 0px #DFDFEA;
+}
+
+.cortar {
+    padding-left: 35px;
+}
+
+#formModific, #formCons, #formUser {
+    background-image: url(../img/man.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#formMod {
+    display:none;
+}
+#txtIdticket {
+    width:340px;
+}
+#txtFeccrea, #txtFecapli, #txtFecsol, #txtFeccie {
+}
+#formMod legend {
+    margin-top: 20px;
+}
+
+    #formMod input {
+        margin-right: 10px;
+
+    }
+
+    #formMod label {
+        margin-top: 12px;
+    }
+
+#causa {
+    margin-top: 40px;
+}
+
+#btnLimpiar {
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 1030px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white;
+}
+
+#btnLimpiar:hover {
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+     box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+}
+
+#btnGuardar {
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+}
+
+ #btnGuardar:hover {
+     -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+     -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+     box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    }
+ /*PANTALLA ELIMINACION*/
+#formDelete {
+    display: none;
+}
+#formDelete legend {
+    margin-top: 50px;
+ }
+
+#formDelete input {
+     margin-right: 10px;
+     width: 417px;
+}
+
+#formDelete label {
+    margin-top: 12px;
+}
+
+#btnLimp , #btnBuscar {
+    background-color: black;
+    margin-top: 70px;
+    margin-left: 130px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white;
+}
+
+#btnLimp:hover , #btnBuscar:hover{
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    }
+
+#btnSave, #btnSig {
+    background-color: black;
+    margin-top: 70px;
+    margin-left: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+}
+
+ #btnSave:hover {
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+     box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+ }
+ /*BUSQUEDA DE CAMBIOS*/
+#formConsul{
+   
+}
+#formConsul legend {
+    margin-top:40px;
+}
+#Buscador {
+    margin-top: 40px;
+    margin-left: 15px;
+    }
+#txtBusqueda{
+    width:430px;
+}
+#btnBuscar {
+    margin-top:1px;
+    margin-left:0px;
+}
+#labCambio {
+    margin-top: 7px;
+}
+#Grid {
+    width: 1250px;
+    margin-top: 125px;
+    margin-left: 25px;
+    margin-right: 50px;
+    border: 1px solid black;
+}
+/*REGISTRO DE USUARIOS & PERSONAS*/
+
+#formUsuarios {
+   
+}
+#formConsul {
+    display: none;
+}
+#formCrear {
+    display: none;
+}
+#CreaUser {
+    display: none;
+}
+#crealogin {
+    display:none;
+}
+#crealogin {
+    display: none;
+}
+#modPersona {
+    display: none;
+}
+#modusuario {
+    display:none;
+}
+#elimiusu {
+    display: none;
+}
+#secuser label {
+    margin-top: 12px;
+}
+#secuser legend {
+    margin-top: 20px;
+}
+#btnSig {
+    margin-top:420px;
+}

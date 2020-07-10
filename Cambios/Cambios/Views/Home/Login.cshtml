@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<script>
+    document.getElementById('menu_principal').style.display = "none";
+</script>
+
+
+<div class="col-lg-12">
+    <!--PARTE IMAGEN LOGIN-->
+    <div class="sidenav  col-md-6">
+        <div class="login-main-text">
+            <h2>Application<br> Login Page</h2>
+            <p>Login or register from here to access.</p>
+        </div>
+    </div>
+
+    <!--PARTE FORMULARIO LOGIN-->
+    <div class="main">
+        <div class="col-md-6">
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input ID="txtUser" type="text" class="form-control" placeholder="User Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input ID="txtPassword" type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <label>Como deseas Ingresar</label>
+
+                    <select id="Cambio" class="form-control">
+                        <option selected disabled>Roles</option>
+                        <option value="0">Administrador</option>
+                        <option value="1">Usuario</option>
+                        <option value="2">Tecnico</option>
+                    </select>
+                    <br>
+                </form>
+                <button id="btnLogin" type="submit" class="btn btn-black" Onclick="validar()">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--VALIDACION LOGIN-->
+<script>
+    function validar() {
+        var usuario = document.getElementById('txtUser').value;
+        var password = document.getElementById('txtPassword').value;
+        var combo = document.getElementById("Cambio").value;
+
+        var msg = "Error en :\n";
+        var ok = true;
+
+        if (usuario.length != 0 && password.length != 0) {
+        }
+        else {
+            msg += " \n Campos vacios";
+            ok = false;
+        }
+        /*Usuario--1*/
+        if (usuario == "nikoj22" && password == "hello" && combo == 0) {
+            //window.open("Pantadmin", "Pantadmin", "width=900, height=900");            
+            //myWindow.close();
+            window.location.href = "https://localhost:44383/Home/Pantadmin";
+        }
+        else {
+            msg += " \n Error de usuario";
+            ok = false;
+        }
+        /////*Usuario--2*/
+        //if (usuario == "danj" && password == "1234" && combo == 1) {
+        //    window.open("Pantusuario", "Pantusuario", "width=900, height=900");
+        //}
+        //else {
+        //    msg += " \n Error de usuario";
+        //    ok = false;
+        //}
+        ///*Usuario--3*/
+        //if (usuario == "luisvm" && password == "4321" && combo == 2) {
+        //    window.open("Panttec", "Panttec", "width=900, height=900");
+        //}
+        //else {
+        //    msg += " \n Error de usuario";
+        //    ok = false;
+        //}
+        if (ok == false) {
+            alert(msg);
+            return ok;
+        }
+
+    }
+</script>

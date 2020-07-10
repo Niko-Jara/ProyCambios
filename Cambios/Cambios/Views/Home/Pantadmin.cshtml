@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Pantadmin";
+}
+
+<!--MENU PAR2-->
+<script>
+    document.getElementById('menu_login').style.display = "none";
+</script>
+
+<form class="container body-content" id="formula">
+    <fieldset>
+        <div id="contform">
+            <legend>Cambios </legend>
+            <legend>Informacion General</legend>
+
+            @*<div class="dashboard_contents" id="ChangeOverview">
+                <tbody>
+                    <tr data-dashboard-row-index="1">
+                        <td style="width: 50%;" class="dashboard" data-dashboard-column-index="0" data-dashboard-cell-index="2">
+                            <div class="dashlet">
+                                <div style="text-align:center" class="dashlet-content">
+                                    <h1>Changes by domain for the last 7 days</h1>
+                                    <div id="block_CUSTOM_ChangeOverview_ID_row1_col0_3" class="display_block">
+                                        <p>Total: 5 objects.</p>
+                                        <table class="listResults">
+                                            <thead>
+                                                <tr>
+                                                    <th title="" class="header">Ticket sub-class</th>
+                                                    <th title="Number of elements" class="header">Count</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="even"><td>Change</td><td><a href="https://demo.combodo.com/simple/pages/UI.php?operation=search&amp;dosearch=1&amp;c[menu]=Change%3AOverview&amp;filter=%5B%22SELECT%20%60Change%60%20FROM%20Change%20AS%20%60Change%60%20WHERE%20%28%28%60Change%60.%60creation_date%60%20%3E%20DATE_SUB%28NOW%28%29%2C%20INTERVAL%207%20DAY%29%29%20AND%20%28%60Change%60.%60finalclass%60%20%3D%20%27Change%27%29%29%22%2C%5B%5D%2C%5B%5D%5D">5</a></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="width: 50%;" class="dashboard" data-dashboard-column-index="1" data-dashboard-cell-index="3">
+                            <div class="dashlet">
+                                <div style="text-align:center" class="dashlet-content">
+                                    <h1>Changes by status for the last 7 days</h1><div id="block_CUSTOM_ChangeOverview_ID_row1_col1_4" class="display_block">
+                                        <p>Total: 5 objects.</p>
+                                        <table class="listResults">
+                                            <thead>
+                                                <tr>
+                                                    <th title="" class="header">Status</th>
+                                                    <th title="Number of elements" class="header">Count</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="even"><td><span title="">New</span></td><td><a href="https://demo.combodo.com/simple/pages/UI.php?operation=search&amp;dosearch=1&amp;c[menu]=Change%3AOverview&amp;filter=%5B%22SELECT%20%60Change%60%20FROM%20Change%20AS%20%60Change%60%20WHERE%20%28%28%60Change%60.%60creation_date%60%20%3E%20DATE_SUB%28NOW%28%29%2C%20INTERVAL%207%20DAY%29%29%20AND%20%28%60Change%60.%60status%60%20%3D%20%27new%27%29%29%22%2C%5B%5D%2C%5B%5D%5D">4</a></td></tr>
+                                                <tr><td><span title="">Assigned</span></td><td><a href="https://demo.combodo.com/simple/pages/UI.php?operation=search&amp;dosearch=1&amp;c[menu]=Change%3AOverview&amp;filter=%5B%22SELECT%20%60Change%60%20FROM%20Change%20AS%20%60Change%60%20WHERE%20%28%28%60Change%60.%60creation_date%60%20%3E%20DATE_SUB%28NOW%28%29%2C%20INTERVAL%207%20DAY%29%29%20AND%20%28%60Change%60.%60status%60%20%3D%20%27assigned%27%29%29%22%2C%5B%5D%2C%5B%5D%5D">1</a></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr data-dashboard-row-index="2">
+                        <td style="width: 50%;" class="dashboard layout_last_used_rank" data-dashboard-column-index="0" data-dashboard-cell-index="4">
+                            <div class="dashlet">
+                                <div style="text-align:center" class="dashlet-content">
+                                    <div id="block_CUSTOM_ChangeOverview_ID_row2_col0_5" class="display_block">
+                                        <h1 style="text-align:center">Owner</h1><div style="height: 200px; width: 100%; max-height: 200px; position: relative;" class="dashboard_chart c3" id="my_chart_block_CUSTOM_ChangeOverview_ID_row2_col0_52"><svg width="495" height="200" style="overflow: hidden;"><defs><clipPath id="c3-1594179260743-clip"><rect width="453" height="132.75"></rect></clipPath><clipPath id="c3-1594179260743-clip-xaxis"><rect x="-41" y="-20" width="525" height="83.25"></rect></clipPath><clipPath id="c3-1594179260743-clip-yaxis"><rect x="-39" y="-4" width="60" height="156.75"></rect></clipPath><clipPath id="c3-1594179260743-clip-grid"><rect width="453" height="132.75"></rect></clipPath><clipPath id="c3-1594179260743-clip-subchart"><rect width="453"></rect></clipPath></defs><g transform="translate(40.5,4.5)"><text class="c3-text c3-empty" text-anchor="middle" dominant-baseline="middle" x="226.5" y="66.375" style="opacity: 0;"></text><rect class="c3-zoom-rect" width="453" height="132.75" style="opacity: 0;"></rect><g clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip)" class="c3-regions" style="visibility: visible;"></g><g clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip-grid)" class="c3-grid" style="visibility: visible;"><g class="c3-ygrids"><line class="c3-ygrid" x1="0" x2="453" y1="133" y2="133"></line><line class="c3-ygrid" x1="0" x2="453" y1="121" y2="121"></line><line class="c3-ygrid" x1="0" x2="453" y1="109" y2="109"></line><line class="c3-ygrid" x1="0" x2="453" y1="97" y2="97"></line><line class="c3-ygrid" x1="0" x2="453" y1="85" y2="85"></line><line class="c3-ygrid" x1="0" x2="453" y1="73" y2="73"></line><line class="c3-ygrid" x1="0" x2="453" y1="61" y2="61"></line><line class="c3-ygrid" x1="0" x2="453" y1="49" y2="49"></line><line class="c3-ygrid" x1="0" x2="453" y1="37" y2="37"></line><line class="c3-ygrid" x1="0" x2="453" y1="25" y2="25"></line><line class="c3-ygrid" x1="0" x2="453" y1="13" y2="13"></line><line class="c3-ygrid" x1="0" x2="453" y1="1" y2="1"></line></g><g class="c3-xgrid-focus"><line class="c3-xgrid-focus" x1="-10" x2="-10" y1="0" y2="132.75" style="visibility: hidden;"></line></g></g><g clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip)" class="c3-chart"><g class="c3-event-rects c3-event-rects-single" style="fill-opacity: 0;"><rect class=" c3-event-rect c3-event-rect-0" x="0" y="0" width="454" height="132.75"></rect></g><g class="c3-chart-bars"><g class="c3-chart-bar c3-target c3-target-value" style="opacity: 1; pointer-events: none;"><g class=" c3-shapes c3-shapes-value c3-bars c3-bars-value" style="cursor: pointer;"><path class="c3-shape c3-shape-0 c3-bar c3-bar-0" d="M 90.80000000000001,132.75 L90.80000000000001,12.97727272727273 L363.2,12.97727272727273 L363.2,132.75 z" style="stroke: rgb(31, 119, 180); fill: rgb(31, 119, 180); opacity: 1;"></path></g></g></g><g class="c3-chart-lines"><g class="c3-chart-line c3-target c3-target-value" style="opacity: 1; pointer-events: none;"><g class=" c3-shapes c3-shapes-value c3-lines c3-lines-value"></g><g class=" c3-shapes c3-shapes-value c3-areas c3-areas-value"></g><g class=" c3-selected-circles c3-selected-circles-value"></g><g class=" c3-shapes c3-shapes-value c3-circles c3-circles-value" style="cursor: pointer;"></g></g></g><g class="c3-chart-arcs" transform="translate(226.5,61.375)"><text class="c3-chart-arcs-title" style="text-anchor: middle; opacity: 0;"></text></g><g class="c3-chart-texts"><g class="c3-chart-text c3-target c3-target-value" style="opacity: 1; pointer-events: none;"><g class=" c3-texts c3-texts-value"></g></g></g></g><g clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip-grid)" class="c3-grid c3-grid-lines"><g class="c3-xgrid-lines"></g><g class="c3-ygrid-lines"></g></g><g class="c3-axis c3-axis-x" clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip-xaxis)" transform="translate(0,132.75)" style="visibility: visible; opacity: 1;"><text class="c3-axis-x-label" transform="" style="text-anchor: end;" x="453" dx="-0.5em" dy="-0.5em"></text><g class="tick" transform="translate(227, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="-3.5" x="0" transform="rotate(90)" style="text-anchor: start; display: block;"><tspan x="0" dy=".71em" dx="8">abc123</tspan></text></g><path class="domain" d="M0,6V0H453V6"></path></g><g class="c3-axis c3-axis-y" clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip-yaxis)" transform="translate(0,0)" style="visibility: visible; opacity: 1;"><text class="c3-axis-y-label" transform="rotate(-90)" style="text-anchor: end;" x="0" dx="-0.5em" dy="1.2em"></text><g class="tick" transform="translate(0,133)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0</tspan></text></g><g class="tick" transform="translate(0,121)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.1</tspan></text></g><g class="tick" transform="translate(0,109)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.2</tspan></text></g><g class="tick" transform="translate(0,97)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.3</tspan></text></g><g class="tick" transform="translate(0,85)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.4</tspan></text></g><g class="tick" transform="translate(0,73)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.5</tspan></text></g><g class="tick" transform="translate(0,61)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.6</tspan></text></g><g class="tick" transform="translate(0,49)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.7</tspan></text></g><g class="tick" transform="translate(0,37)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.8</tspan></text></g><g class="tick" transform="translate(0,25)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0.9</tspan></text></g><g class="tick" transform="translate(0,13)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">1</tspan></text></g><g class="tick" transform="translate(0,1)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">1.1</tspan></text></g><path class="domain" d="M-6,1H0V132.75H-6"></path></g><g class="c3-axis c3-axis-y2" transform="translate(453,0)" style="visibility: hidden; opacity: 1;"><text class="c3-axis-y2-label" transform="rotate(-90)" style="text-anchor: end;" x="0" dx="-0.5em" dy="-0.5em"></text><g class="tick" transform="translate(0,133)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0</tspan></text></g><g class="tick" transform="translate(0,120)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.1</tspan></text></g><g class="tick" transform="translate(0,107)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.2</tspan></text></g><g class="tick" transform="translate(0,94)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.3</tspan></text></g><g class="tick" transform="translate(0,81)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.4</tspan></text></g><g class="tick" transform="translate(0,67)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.5</tspan></text></g><g class="tick" transform="translate(0,54)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.6</tspan></text></g><g class="tick" transform="translate(0,41)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.7</tspan></text></g><g class="tick" transform="translate(0,28)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.8</tspan></text></g><g class="tick" transform="translate(0,15)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.9</tspan></text></g><g class="tick" transform="translate(0,1)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">1</tspan></text></g><path class="domain" d="M6,1H0V132.75H6"></path></g></g><g transform="translate(20.5,200.5)" style="visibility: hidden;"><g clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip-subchart)" class="c3-chart"><g class="c3-chart-bars"></g><g class="c3-chart-lines"></g></g><g clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip)" class="c3-brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><rect class="background" x="0" width="473" style="visibility: hidden; cursor: crosshair;"></rect><rect class="extent" x="0" width="0" style="cursor: move;"></rect><g class="resize e" transform="translate(0,0)" style="cursor: ew-resize; display: none;"><rect x="-3" width="6" height="6" style="visibility: hidden;"></rect></g><g class="resize w" transform="translate(0,0)" style="cursor: ew-resize; display: none;"><rect x="-3" width="6" height="6" style="visibility: hidden;"></rect></g></g><g class="c3-axis-x" transform="translate(0,0)" clip-path="url(https://demo.combodo.com/simple/pages/UI.php?c%5Bmenu%5D=Change%3AOverview#c3-1594179260743-clip-xaxis)" style="visibility: hidden; opacity: 1;"><g class="tick" transform="translate(227, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="-3.5" x="0" transform="rotate(90)" style="text-anchor: start; display: block;"><tspan x="0" dy=".71em" dx="8">abc123</tspan></text></g><path class="domain" d="M0,6V0H453V6"></path></g></g><g transform="translate(0,200)" style="visibility: hidden;"></g><text class="c3-title" x="247.5" y="0"></text></svg><div class="c3-tooltip-container" style="position: absolute; pointer-events: none; display: none;"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="width: 50%;" class="dashboard layout_last_used_rank" data-dashboard-column-index="1" data-dashboard-cell-index="5">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>*@
+        
+        </div>
+    </fieldset>
+</form>
+
+<!--https://localhost:44383/Home/Login-->

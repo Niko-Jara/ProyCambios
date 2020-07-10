@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+@*MENU PAR1*@
+
+<div id="menu_login" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div id="titulopag" class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Prueba", "Login", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Login", "Login", "Home")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@*MENU PAR2*@
+
+
+<div id="menu_principal" class="d-flex">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div id="tito" class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                </button>
+
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Cambios</a>
+                <a href="#" class="cortar list-group-item list-group-item-action bg-light" onclick="window.location.href='Cambios'">Cambios</a>
+                <a href="#" class="cortar list-group-item list-group-item-action bg-light">Acciones</a>
+                <a href="#" class="cortar list-group-item list-group-item-action bg-light" onclick="window.location.href='Aprobaciones'">Aprobaciones</a>
+                <a href="#" class="cortar list-group-item list-group-item-action bg-light" onclick="window.location.href='Regusers'">Registro Usuarios</a>
+                <a href="#" class="cortar list-group-item list-group-item-action bg-light" onclick="window.location.href='Login'">Salir</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container body-content">
+    @RenderBody()
+
+    <footer id="piepag" class="page-footer font-small special-color-dark pt-4 col-md-12">
+        <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+    </footer>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+</body>
+</html>
