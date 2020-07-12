@@ -172,6 +172,7 @@
     <Content Include="Views\Home\Cambios.cshtml" />
     <Content Include="Views\Home\Regusers.cshtml" />
     <Content Include="Views\Home\Aprobaciones.cshtml" />
+    <Content Include="Views\Home\Catalogos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

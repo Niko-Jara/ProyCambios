@@ -12,306 +12,308 @@
     <fieldset>
         <!--SECCION MENU MOSTRAR SECCIONES-->
         <div id="formPrinmod">
-            <legend>Modificacion de Cambios</legend>
-            <button type="button" id="btnCrear" class="btn btn-dark" onclick="mostrarSec3()">Crear</button>
-            <button type="button" id="btnMod" class="btn btn-dark" onclick="mostrarSec1()">Modificar</button>
-            <button type="button" id="btnElim" class="btn btn-dark" onclick="mostrarSec2()">Eliminar</button>
-            <button type="button" id="btnElim" class="btn btn-dark" onclick="mostrarSec4()">Consultar</button>
-
-            <!--SECCION MOSTRAR SECCION DE MODIFICACION -->
-            <div id="formCrear">
-                <legend>Creación de Cambios </legend>
-
-                <!--PRIMERA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Información General  </legend>
-
-                    <label>ID_Ticket</label>
-                    <input type="text" class="form-control" id="txtIdticket" required>
-
-                    <label>ID_Empresa</label>
-                    <select class="form-control" id="slectidEmpresa">
-                        <option selected disabled>Usuario Creador</option>
-                        <option value="0">Daniel Jacamo</option>
-                        <option value="1">Luis vega</option>
-                        <option value="2">Nikool Jara</option>
-                    </select>
-
-                    <label>Usuario Creacion</label>
-                    <select class="form-control" id="slectUsarea">
-                        <option selected disabled>Usuario Creador</option>
-                        <option value="0">Daniel Jacamo</option>
-                        <option value="1">Luis vega</option>
-                        <option value="2">Nikool Jara</option>
-                    </select>
-
-                    <label>Usuario Agente</label>
-                    <select class="form-control" id="slectUsagent">
-                        <option selected disabled>Usuario Agente</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-                </div>
-
-                <!--SEGUNDA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Categorizacion</legend>
-
-                    <label>Mesa</label>
-                    <select class="form-control" id="slectMesa">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Categoria</label>
-                    <select class="form-control" id="slectCategoria">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Tipo</label>
-                    <select class="form-control" id="slectTipo">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Estado</label>
-                    <select class="form-control" id="slectEstado">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Prioridad</label>
-                    <select class="form-control" id="slectPrioridad">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-                </div>
-
-                <!--TERCERA COLUMNA -->
-                <div id="inputfechas" class="col-md-4">
-                    <legend>Fechas</legend>
-
-                    <label>Fecha_Creacion</label>
-                    <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                    <label>Fecha_Aplicacion</label>
-                    <input class="form-control" type="date" id="txtFecapli" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                    <label>Fecha_Solucion</label>
-                    <input class="form-control" type="date" id="txtFecsol" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                    <label>Fecha_Cierre</label>
-                    <input class="form-control" type="date" id="txtFeccie" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                </div>
-
-                <!--COLUMNA COMPLETA-->
-                <div id="causa" class="col-md-12">
-                    <label>Causa Raiz</label>
-                    <textarea class="form-control">  </textarea>
-                </div>
-
-                <button type="button" id="btnLimpiar" class="btn btn-dark">Limpiar</button>
-                <button type="button" id="btnGuardar" class="btn btn-dark">Guardar</button>
-
+            <div class="btn-group" role="group">
+                <legend>Modificacion de Cambios</legend>
+                <button type="button" id="btnCrear" class="btn btn-dark" onclick="mostrarSec3()">Crear</button>
+                <button type="button" id="btnMod" class="btn btn-dark" onclick="mostrarSec1()">Modificar</button>
+                <button type="button" id="btnElim" class="btn btn-dark" onclick="mostrarSec2()">Eliminar</button>
+                <button type="button" id="btnConsul" class="btn btn-dark" onclick="mostrarSec4()">Consultar</button>
             </div>
+                <!--SECCION MOSTRAR SECCION DE MODIFICACION -->
+                <div id="formCrear">
+                    <legend>Creación de Cambios </legend>
 
-            <!--SECCION MOSTRAR SECCION DE MODIFICACION -->
-            <div id="formMod">
-                <legend>Modificacion de Cambios </legend>
-
-                <div id="titIde">
-                    <label>ID_Ticket</label>
-                    <input type="text" class="form-control" id="txtIdticket" required>
-                </div>
-
-                <!--PRIMERA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Información General  </legend>
-
-                    <label>ID_Empresa</label>
-                    <select class="form-control" id="slectidEmpresa">
-                        <option selected disabled>Usuario Creador</option>
-                        <option value="0">Daniel Jacamo</option>
-                        <option value="1">Luis vega</option>
-                        <option value="2">Nikool Jara</option>
-                    </select>
-
-                    <label>Usuario Creacion</label>
-                    <select class="form-control" id="slectUsarea">
-                        <option selected disabled>Usuario Creador</option>
-                        <option value="0">Daniel Jacamo</option>
-                        <option value="1">Luis vega</option>
-                        <option value="2">Nikool Jara</option>
-                    </select>
-
-                    <label>Usuario Agente</label>
-                    <select class="form-control" id="slectUsagent">
-                        <option selected disabled>Usuario Agente</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-                </div>
-
-                <!--SEGUNDA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Categorizacion</legend>
-
-                    <label>Mesa</label>
-                    <select class="form-control" id="slectMesa">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Categoria</label>
-                    <select class="form-control" id="slectCategoria">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Tipo</label>
-                    <select class="form-control" id="slectTipo">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Estado</label>
-                    <select class="form-control" id="slectEstado">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Prioridad</label>
-                    <select class="form-control" id="slectPrioridad">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-                </div>
-
-                <!--TERCERA COLUMNA -->
-                <div id="inputfechas" class="col-md-4">
-                    <legend>Fechas</legend>
-
-                    <label>Fecha_Creacion</label>
-                    <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                    <label>Fecha_Aplicacion</label>
-                    <input class="form-control" type="date" id="txtFecapli" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                    <label>Fecha_Solucion</label>
-                    <input class="form-control" type="date" id="txtFecsol" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                    <label>Fecha_Cierre</label>
-                    <input class="form-control" type="date" id="txtFeccie" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                </div>
-
-                <!--COLUMNA COMPLETA-->
-                <div id="causa" class="col-md-12">
-                    <label>Causa Raiz</label>
-                    <textarea class="form-control">  </textarea>
-                </div>
-
-                <button type="button" id="btnLimpiar" class="btn btn-dark">Limpiar</button>
-                <button type="button" id="btnGuardar" class="btn btn-dark">Guardar</button>
-
-            </div>
-
-            <!--SECCION MOSTRAR SECCION DE ELIMINACION -->
-            <div id="formDelete">
-                <legend>Eliminacion de Cambios </legend>
-                <legend>Información General  </legend>
-
-                <label>ID_Ticket</label>
-                <input type="text" class="form-control" id="txtIdticket" required>
-
-                <button type="button" id="btnLimp" class="btn btn-dark">Limpiar</button>
-                <button type="button" id="btnSave" class="btn btn-dark">Guardar</button>
-            </div>
-            <!--SECCION CONSULTAR CAMBIOS-->
-            <div id="formConsul">
-                <legend>Consultar Cambios </legend>
-
-                <!--BUSCADOR -->
-                <div id="Buscador">
-                    <div class="col-xs-1">
-                        <label id="labCambio">Id_Cambio</label>
-                    </div>
+                    <!--PRIMERA COLUMNA -->
                     <div class="col-md-4">
-                        <input type="text" class="form-control" id="txtBusqueda" required>
+                        <legend>Información General  </legend>
+
+                        <label>ID_Ticket</label>
+                        <input type="text" class="form-control" id="txtIdtick" required>
+
+                        <label>ID_Empresa</label>
+                        <select class="form-control" id="slectidEmpresa">
+                            <option selected disabled>Usuario Creador</option>
+                            <option value="0">Daniel Jacamo</option>
+                            <option value="1">Luis vega</option>
+                            <option value="2">Nikool Jara</option>
+                        </select>
+
+                        <label>Usuario Creacion</label>
+                        <select class="form-control" id="slectUsarea">
+                            <option selected disabled>Usuario Creador</option>
+                            <option value="0">Daniel Jacamo</option>
+                            <option value="1">Luis vega</option>
+                            <option value="2">Nikool Jara</option>
+                        </select>
+
+                        <label>Usuario Agente</label>
+                        <select class="form-control" id="slectUsagent">
+                            <option selected disabled>Usuario Agente</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
                     </div>
-                    <div class="col-xs-1">
-                        <button type="button" id="btnBuscar" class="btn btn-dark">Buscar</button>
+
+                    <!--SEGUNDA COLUMNA -->
+                    <div class="col-md-4">
+                        <legend>Categorizacion</legend>
+
+                        <label>Mesa</label>
+                        <select class="form-control" id="slectMesa">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Categoria</label>
+                        <select class="form-control" id="slectCategoria">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Tipo</label>
+                        <select class="form-control" id="slectTipo">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Estado</label>
+                        <select class="form-control" id="slectEstado">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Prioridad</label>
+                        <select class="form-control" id="slectPrioridad">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
                     </div>
+
+                    <!--TERCERA COLUMNA -->
+                    <div id="inputfechas" class="col-md-4">
+                        <legend>Fechas</legend>
+
+                        <label>Fecha_Creacion</label>
+                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <label>Fecha_Aplicacion</label>
+                        <input class="form-control" type="date" id="txtFecapli" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <label>Fecha_Solucion</label>
+                        <input class="form-control" type="date" id="txtFecsol" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <label>Fecha_Cierre</label>
+                        <input class="form-control" type="date" id="txtFeccie" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                    </div>
+
+                    <!--COLUMNA COMPLETA-->
+                    <div id="causa" class="col-md-12">
+                        <label>Causa Raiz</label>
+                        <textarea class="form-control">  </textarea>
+                    </div>
+
+                    <button type="button" id="btnLimpiar" class="btn btn-dark">Limpiar</button>
+                    <button type="button" id="btnGuardar" class="btn btn-dark">Guardar</button>
+
                 </div>
 
-                <!--GRID-VIEW // Table -->
-                <table id="Grid" class="table table-dark">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!--SECCION MOSTRAR SECCION DE MODIFICACION -->
+                <div id="formMod">
+                    <legend>Modificacion de Cambios </legend>
+
+                    <div id="titIde">
+                        <label>ID_Ticket</label>
+                        <input type="text" class="form-control" id="txtIdticket" required>
+                    </div>
+
+                    <!--PRIMERA COLUMNA -->
+                    <div class="col-md-4">
+                        <legend>Información General  </legend>
+
+                        <label>ID_Empresa</label>
+                        <select class="form-control" id="slectidEmpresa">
+                            <option selected disabled>Usuario Creador</option>
+                            <option value="0">Daniel Jacamo</option>
+                            <option value="1">Luis vega</option>
+                            <option value="2">Nikool Jara</option>
+                        </select>
+
+                        <label>Usuario Creacion</label>
+                        <select class="form-control" id="slectUsarea">
+                            <option selected disabled>Usuario Creador</option>
+                            <option value="0">Daniel Jacamo</option>
+                            <option value="1">Luis vega</option>
+                            <option value="2">Nikool Jara</option>
+                        </select>
+
+                        <label>Usuario Agente</label>
+                        <select class="form-control" id="slectUsagent">
+                            <option selected disabled>Usuario Agente</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+                    </div>
+
+                    <!--SEGUNDA COLUMNA -->
+                    <div class="col-md-4">
+                        <legend>Categorizacion</legend>
+
+                        <label>Mesa</label>
+                        <select class="form-control" id="slectMesa">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Categoria</label>
+                        <select class="form-control" id="slectCategoria">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Tipo</label>
+                        <select class="form-control" id="slectTipo">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Estado</label>
+                        <select class="form-control" id="slectEstado">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                        <label>Prioridad</label>
+                        <select class="form-control" id="slectPrioridad">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+                    </div>
+
+                    <!--TERCERA COLUMNA -->
+                    <div id="inputfechas" class="col-md-4">
+                        <!--OJO DEBERIA SER UNA CLASE-->
+                        <legend>Fechas</legend>
+
+                        <label>Fecha_Creacion</label>
+                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <label>Fecha_Aplicacion</label>
+                        <input class="form-control" type="date" id="txtFecapli" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <label>Fecha_Solucion</label>
+                        <input class="form-control" type="date" id="txtFecsol" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <label>Fecha_Cierre</label>
+                        <input class="form-control" type="date" id="txtFeccie" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                    </div>
+
+                    <!--COLUMNA COMPLETA--> <!--OJO DEBERIA SER UNA CLASE-->
+                    <div id="causa" class="col-md-12">
+                        <label>Causa Raiz</label>
+                        <textarea class="form-control">  </textarea>
+                    </div>
+
+                    <button type="button" id="btnLimpiar" class="btn btn-dark">Limpiar</button>
+                    <button type="button" id="btnGuardar" class="btn btn-dark">Guardar</button>
+
+                </div>
+
+                <!--SECCION MOSTRAR SECCION DE ELIMINACION -->
+                <div id="formDelete">
+                    <legend>Eliminacion de Cambios </legend>
+                    <legend>Información General  </legend>
+
+                    <label>ID_Ticket</label>
+                    <input type="text" class="form-control" id="txtIdticket" required>
+
+                    <button type="button" id="btnLimp" class="btn btn-dark">Limpiar</button>
+                    <button type="button" id="btnSave" class="btn btn-dark">Guardar</button>
+                </div>
+                <!--SECCION CONSULTAR CAMBIOS-->
+                <div id="formConsul">
+                    <legend>Consultar Cambios </legend>
+
+                    <!--BUSCADOR -->
+                    <div id="Buscador">
+                        <div class="col-xs-1">
+                            <label id="labCambio">Id_Cambio</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="txtBusqueda" required>
+                        </div>
+                        <div class="col-xs-1">
+                            <button type="button" id="btnBuscar" class="btn btn-dark">Buscar</button>
+                        </div>
+                    </div>
+
+                    <!--GRID-VIEW // Table -->
+                    <table id="Grid" class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </fieldset>
+</fieldset>
 </form>
 
 <!-- MOSTRAR SECCIONES-->

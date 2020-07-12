@@ -54,6 +54,11 @@ namespace Cambios.Controllers
 
             return View();
         }
+        public ActionResult Catalogos()
+        {
+            ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
     }
 }
