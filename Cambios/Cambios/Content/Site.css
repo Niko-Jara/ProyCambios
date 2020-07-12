@@ -393,33 +393,10 @@ body {
 /*REGISTRO DE USUARIOS & PERSONAS*/
 
 
-#formConsul {
+#formConsul, #formCrear, #CreaUser, #crealogin, #modPersona, #modusuario, #formConsulusers, #elimiusu {
     display: none;
 }
-#formCrear {
-    display: none;
-}
-#CreaUser {
-    display: none;
-}
-#crealogin {
-    display:none;
-}
-#crealogin {
-    display: none;
-}
-#modPersona {
-    display: none;
-}
-#modusuario {
-    display:none;
-}
-#formConsulusers {
-    display: none;
-}
-#elimiusu {
-    display: none;
-}
+
 #colum6 {
     margin-left: 310px;
     margin-top: 40px;
@@ -499,5 +476,10 @@ body {
     color:white;
 }
 .linea{
-    margin-top:5px; margin-bottom:5px;
+    margin-top:5px; 
+    margin-bottom:5px;
+}
+/*CATALOGOS*/
+#catCorreo, #catEmpresa, #catMesa, #catCat, #catTipo, #catEstado, #catPrioridad, #catAccticket, #catAproticket, #catResp {
+    display: none;
 }
