@@ -488,6 +488,10 @@ body {
 #catModresp, #catModAproticket, #catModaccticket, #catModprioridad, #catModestado, #catModtipo, #catModcat, #catModmesa, #catModempresa, #catModcorreo {
     display: none;
 }
+/*ELIMINACION DE CATALOGOS*/
+#catElimresp, #catElimAproticket, #catElimaccticket, #catElimprioridad, #catElimestado, #catElimtipo, #catElimcat, #catElimmesa, #catElimempresa, #catElimcorreo {
+    display: none;
+}
 /*DISEÑO DE PANTALLAS DE CATALOGOS*/
 .catal {
     margin-left:300px;

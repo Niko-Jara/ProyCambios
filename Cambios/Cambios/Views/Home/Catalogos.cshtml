@@ -89,28 +89,34 @@
                         Eliminar
                     </button>
                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <a class="dropdown-item" href="#">Catalogo_Empresa</a>
+                        <a class="dropdown-item" onclick="catelimcorreo()">Catalogo_Correo</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Mesa</a>
+                        <a class="dropdown-item" onclick="catelimemp()">Catalogo_Empresa</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Categoria</a>
+                        <a class="dropdown-item" onclick="catelimesa()">Catalogo_Mesa</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Tipo</a>
+                        <a class="dropdown-item" onclick="catelicat()">Catalogo_Categoria</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Estado</a>
+                        <a class="dropdown-item" onclick="catelimTipo()">Catalogo_Tipo</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Accionticket</a>
+                        <a class="dropdown-item" onclick="catelimestado()">Catalogo_Estado</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_aprobacion</a>
+                        <a class="dropdown-item" onclick="catelimprio()">Catalogo_Prioridad</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Respuesta</a>
+                        <a class="dropdown-item" onclick="catelimaccion()">Catalogo_Accionticket</a>
+                        <hr class="linea" />
+
+                        <a class="dropdown-item" onclick=" catelimapro()">Catalogo_aprobacion</a>
+                        <hr class="linea" />
+
+                        <a class="dropdown-item" onclick="catelimresp()">Catalogo_Respuesta</a>
                     </div>
                 </div>
 
@@ -137,8 +143,8 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                     <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
@@ -684,6 +690,147 @@
                 </div>
             </div>
 
+            <!--SECCION DE ELIMINAR CATALOGOS-->
+            <!--ELIMINAR CATALOGOS-->
+            <!--CATALOGO CORREO-->
+
+            <div id="catElimcorreo">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Correo </legend>
+
+                    <label>ID_TipoCorreo</label>
+                    <input type="text" class="form-control" id="txtmodIdEmpresa" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO EMPRESA-->
+
+            <div id="catElimempresa">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Empresa </legend>
+
+                    <label>ID_Empresa</label>
+                    <input type="text" class="form-control" id="txtmodIdEmpresa" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO MESA-->
+
+            <div id="catElimmesa">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Mesa </legend>
+
+                    <label>ID_Mesa</label>
+                    <input type="text" class="form-control" id="txtmodIdmesa" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO CATEGORIA-->
+
+            <div id="catElimcat">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Categoria </legend>
+
+                    <label>ID_Categoria</label>
+                    <input type="text" class="form-control" id="txtmodIdcat" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO TIPO-->
+
+            <div id="catElimtipo">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Tipo </legend>
+
+                    <label>ID_Tipo</label>
+                    <input type="text" class="form-control" id="txtmodIdtipo" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  ESTADO-->
+
+            <div id="catElimestado">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Estado</legend>
+
+                    <label>ID_Estado</label>
+                    <input type="text" class="form-control" id="txtmodIdestado" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  PRIORIDAD-->
+
+            <div id="catElimprioridad">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Prioridad</legend>
+
+                    <label>ID_Estado</label>
+                    <input type="text" class="form-control" id="txtmodIdprioridad" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  ACCION  TICKET-->
+
+            <div id="catElimaccticket">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Accion Ticket</legend>
+
+                    <label>ID_Tipo Accion</label>
+                    <input type="text" class="form-control" id="txtmodIdtipoacc" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  TIPO APROBACION-->
+
+            <div id="catElimAproticket">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Aprobacion Ticket</legend>
+
+                    <label>ID_Tipo Aprobacion</label>
+                    <input type="text" class="form-control" id="txtmodIdacatprob" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  RESPUESTA DE APROBACION-->
+
+            <div id="catElimresp">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Eliminar Respuesta Ticket</legend>
+
+                    <label>ID_Respuesta</label>
+                    <input type="text" class="form-control" id="txtmodIdacatres" required>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
         </div>
     </fieldset>
 </form>
@@ -705,7 +852,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -716,6 +863,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
     //< !--CATALOGO EMPRESA-- >//
     function catempresa() {
@@ -730,7 +889,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -741,6 +900,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
     //< !--CATALOGO MESA-- >//
     function catemesa() {
@@ -755,7 +926,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -766,6 +937,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
     //< !--CATALOGO CATEGORIA-- >//
     function catcatalog() {
@@ -780,7 +963,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -791,6 +974,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
     //< !--CATALOGO TIPO-- >//
     function cattipo() {
@@ -805,7 +1000,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -816,6 +1011,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
     //< !--CATALOGO ESTADO-- >//
     function catEstado() {
@@ -830,7 +1037,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none'
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR  POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -841,6 +1048,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
 
     }
     //< !--CATALOGO PRIORIDAD-- >//
@@ -856,7 +1075,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -867,6 +1086,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
     //< !--CATALOGO ACCION TICKET-- >//
     function catAccticket() {
@@ -881,7 +1112,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -892,6 +1123,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
     //< !--CATALOGO TIPO APROBACION TICKET-- >//
     function catAproticket() {
@@ -906,7 +1149,7 @@
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -917,6 +1160,18 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
 
     }
     //< !--CATALOGO RESPUESTA TICKET-- >//
@@ -932,7 +1187,7 @@
         document.getElementById('catMesa').style.display = 'none';
         document.getElementById('catCorreo').style.display = 'none';
 
-        //OTRO POR ACA
+        //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -943,13 +1198,25 @@
         document.getElementById('catModcat').style.display = 'none';
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
+
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
 
     //--< !--PARTE SECCION DE MODIFICAR CATALOGOS-- >//
 
-      //< !--CATALOGO CORREO-- >//
-    function catmodcorreos()
-    {
+    //< !--CATALOGO CORREO-- >//
+    function catmodcorreos() {
         document.getElementById('catModcorreo').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -961,7 +1228,7 @@
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModempresa').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -972,10 +1239,22 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGO EMPRESA-- >//
-    function catmodempresas()
-    {
+    //< !--CATALOGO EMPRESA-- >//
+    function catmodempresas() {
         document.getElementById('catModempresa').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -987,7 +1266,7 @@
         document.getElementById('catModmesa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -998,8 +1277,20 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGO MESA-- >//
+    //< !--CATALOGO MESA-- >//
     function catmodmesa() {
         document.getElementById('catModmesa').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
@@ -1012,7 +1303,7 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1023,8 +1314,20 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGO CATEGORIA-- >//
+    //< !--CATALOGO CATEGORIA-- >//
     function catmodcat() {
         document.getElementById('catModcat').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
@@ -1037,7 +1340,7 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1048,8 +1351,21 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGO TIPO-- >//
+    //< !--CATALOGO TIPO-- >//
     function catmodtipo() {
         document.getElementById('catModtipo').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
@@ -1062,7 +1378,7 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1073,8 +1389,20 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGO ESTADO-- >//
+    //< !--CATALOGO ESTADO-- >//
     function catmodestados() {
         document.getElementById('catModestado').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
@@ -1087,7 +1415,7 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1098,8 +1426,20 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGO PRIORIDAD-- >//
+    //< !--CATALOGO PRIORIDAD-- >//
     function catmodprior() {
         document.getElementById('catModprioridad').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
@@ -1112,7 +1452,7 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1123,8 +1463,20 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGO ACTION TICKET-- >//
+    //< !--CATALOGO ACTION TICKET-- >//
     function catmodaccticket() {
         document.getElementById('catModaccticket').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
@@ -1137,7 +1489,7 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1148,8 +1500,20 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
     }
-      //< !--CATALOGOAPROBACION TICKET-- >//
+    //< !--CATALOGOAPROBACION TICKET-- >//
     function catmodapro() {
         document.getElementById('catModAproticket').style.display = 'block';
         document.getElementById('catModresp').style.display = 'none';
@@ -1162,7 +1526,7 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1173,8 +1537,21 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
     }
-      //< !--CATALOGO RESPUESTA TICKET-- >//
+    //< !--CATALOGO RESPUESTA TICKET-- >//
     function catmodresp() {
         document.getElementById('catModresp').style.display = 'block';
         document.getElementById('catModAproticket').style.display = 'none';
@@ -1187,7 +1564,58 @@
         document.getElementById('catModempresa').style.display = 'none';
         document.getElementById('catModcorreo').style.display = 'none';
 
-        //--OTRO POR ACA
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+
+        //UN ELIMINAR POR ACA
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+    }
+    //--< !--PARTE SECCION DE ELIMINAR CATALOGOS-- >//
+
+    //< !--CATALOGO ELIMINAR CORREO-- >//
+    function catelimcorreo(){
+        document.getElementById('catElimcorreo').style.display = 'block';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -1199,5 +1627,340 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
     }
+
+    //< !--CATALOGO ELIMINAR EMPRESA-- >//
+    function catelimemp() {
+        document.getElementById('catElimempresa').style.display = 'block';
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    //< !--CATALOGO ELIMINAR MESA-- >//
+    function catelimesa() {
+        document.getElementById('catElimmesa').style.display = 'block'; 
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    //< !--CATALOGO ELIMINAR CATEGORIA-- >//
+    function catelicat() {
+        document.getElementById('catElimcat').style.display = 'block'; 
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    //< !--CATALOGO ELIMINAR TIPO-- >//
+    function catelimTipo() {
+        document.getElementById('catElimtipo').style.display = 'block'; 
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    //< !--CATALOGO ELIMINAR ESTADO-- >//
+    function catelimestado() {
+        document.getElementById('catElimestado').style.display = 'block'; 
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+     //< !--CATALOGO ELIMINAR PRIORIDAD-- >//
+    function catelimprio() {
+        document.getElementById('catElimprioridad').style.display = 'block'; 
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    //< !--CATALOGO ELIMINAR ACCION TICKET-- >//
+    function catelimaccion() {
+        document.getElementById('catElimaccticket').style.display = 'block';
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none'; 
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    //< !--CATALOGO ELIMINAR APROBACION DE TICKET-- >//
+    function catelimapro() {
+        document.getElementById('catElimAproticket').style.display = 'block';
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+        document.getElementById('catElimresp').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    //< !--CATALOGO ELIMINAR RESPUESTA TICKET-- >//
+    function catelimresp() {
+        document.getElementById('catElimresp').style.display = 'block'; 
+        document.getElementById('catElimcorreo').style.display = 'none';
+        document.getElementById('catElimempresa').style.display = 'none';
+        document.getElementById('catElimmesa').style.display = 'none';
+        document.getElementById('catElimcat').style.display = 'none';
+        document.getElementById('catElimtipo').style.display = 'none';
+        document.getElementById('catElimestado').style.display = 'none';
+        document.getElementById('catElimaccticket').style.display = 'none';
+        document.getElementById('catElimAproticket').style.display = 'none';
+        document.getElementById('catElimprioridad').style.display = 'none';
+
+        //--OTRO MODIFICAR POR ACA
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO CREAR POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+    
 
 </script>
