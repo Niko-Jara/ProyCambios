@@ -480,6 +480,33 @@ body {
     margin-bottom:5px;
 }
 /*CATALOGOS*/
+/*CREACION DE CATALOGOS*/
 #catCorreo, #catEmpresa, #catMesa, #catCat, #catTipo, #catEstado, #catPrioridad, #catAccticket, #catAproticket, #catResp {
     display: none;
 }
+/*MODIFICACION DE CATALOGOS*/
+#catModresp, #catModAproticket, #catModaccticket, #catModprioridad, #catModestado, #catModtipo, #catModcat, #catModmesa, #catModempresa, #catModcorreo {
+    display: none;
+}
+/*DISEÑO DE PANTALLAS DE CATALOGOS*/
+.catal {
+    margin-left:300px;
+    margin-top:100px;
+}
+.btncat {
+    color: white;
+    background-color: black;
+    border: 1px solid #898483;
+    min-width: 100px;
+    box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+    float:right;
+    margin-top:50px;
+}
+.btncat:hover {
+    color: white;
+    background-color: #56595A;
+    border: 1px solid #898483;
+    min-width: 110px;
+    box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+}
+

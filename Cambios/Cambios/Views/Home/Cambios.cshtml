@@ -120,8 +120,8 @@
                         <textarea class="form-control">  </textarea>
                     </div>
 
-                    <button type="button" id="btnLimpiar" class="btn btn-dark">Limpiar</button>
-                    <button type="button" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                    <button type="button"  class="btncat  btn btn-dark">Limpiar</button>
+                    <button type="button"  class="btncat  btn btn-dark">Guardar</button>
 
                 </div>
 
@@ -229,21 +229,21 @@
                         <textarea class="form-control">  </textarea>
                     </div>
 
-                    <button type="button" id="btnLimpiar" class="btn btn-dark">Limpiar</button>
-                    <button type="button" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                    <button type="button"  class="btncat  btn btn-dark">Limpiar</button>
+                    <button type="button"  class="btncat  btn btn-dark">Guardar</button>
 
                 </div>
 
                 <!--SECCION MOSTRAR SECCION DE ELIMINACION -->
-                <div id="formDelete">
+                <div id="formDelete" class="catal  col-md-6">
                     <legend>Eliminacion de Cambios </legend>
                     <legend>Información General  </legend>
 
                     <label>ID_Ticket</label>
                     <input type="text" class="form-control" id="txtIdticket" required>
 
-                    <button type="button" id="btnLimp" class="btn btn-dark">Limpiar</button>
-                    <button type="button" id="btnSave" class="btn btn-dark">Guardar</button>
+                    <button type="button"  class="btncat  btn btn-dark">Limpiar</button>
+                    <button type="button"  class="btncat  btn btn-dark">Guardar</button>
                 </div>
                 <!--SECCION CONSULTAR CAMBIOS-->
                 <div id="formConsul">
@@ -337,17 +337,17 @@
     //<!-- ELIMINAR CAMBIO-->
     function mostrarSec3()
     {
-        document.getElementById('formDelete').style.display = 'none';
-        document.getElementById('formMod').style.display = 'none';
         document.getElementById('formCrear').style.display = 'block';
-        document.getElementById('formConsul').style.display = 'none';   
+        document.getElementById('formDelete').style.display = 'none'; 
+        document.getElementById('formMod').style.display = 'none'; 
+        document.getElementById('formConsul').style.display = 'none';  
     }
     //<!-- CONSULTAR CAMBIO-->
     function mostrarSec4()
-    {
+    {  
+        document.getElementById('formConsul').style.display = 'block'; 
         document.getElementById('formDelete').style.display = 'none';
         document.getElementById('formMod').style.display = 'none';
         document.getElementById('formCrear').style.display = 'none';
-        document.getElementById('formConsul').style.display = 'block';  
     }
 </script>

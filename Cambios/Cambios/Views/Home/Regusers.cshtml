@@ -379,65 +379,72 @@
 <!-- MOSTRAR SECCIONES CREAR USUARIO Y CREAR PERSONA-->
 <script>
     //PARTE CREAR USUARIO
-    function mostruser() {
+    function mostruser()
+    {
         document.getElementById('CreaUser').style.display = 'block';
         document.getElementById('crealogin').style.display = 'none';
-        document.getElementById('elimiusu').style.display = 'none';
-        document.getElementById('formConsulusers').style.display = 'none'
+        document.getElementById( 'elimiusu').style.display = 'none';
+        document.getElementById('formConsulusers').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('modusuario').style.display = 'none';
     }
-    function esconuser() {
-        document.getElementById('CreaUser').style.display = 'none';
+    function esconuser()
+    {
         document.getElementById('crealogin').style.display = 'block';
+        document.getElementById('CreaUser').style.display = 'none';
         document.getElementById('elimiusu').style.display = 'none';
-        document.getElementById('formConsulusers').style.display = 'none'
+        document.getElementById('formConsulusers').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
-        document.getElementById('modusuario').style.display = 'none';
+        document.getElementById( 'modusuario').style.display = 'none';
     }
     //PARTE MODIFICAR
-    function modper() {
+    function modper()
+    {
         document.getElementById('modPersona').style.display = 'block';
         document.getElementById('modusuario').style.display = 'none';
         document.getElementById('crealogin').style.display = 'none';
         document.getElementById('CreaUser').style.display = 'none';
         document.getElementById('elimiusu').style.display = 'none';
-        document.getElementById('formConsulusers').style.display = 'none'
+        document.getElementById('formConsulusers').style.display = 'none';
     }
-    function moduser() {
+    function moduser()
+    {
         document.getElementById('modusuario').style.display = 'block';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('crealogin').style.display = 'none';
         document.getElementById('CreaUser').style.display = 'none';
         document.getElementById('elimiusu').style.display = 'none';
-        document.getElementById('formConsulusers').style.display = 'none'
+       document.getElementById('formConsulusers').style.display = 'none';
     }
     //PARTE ELIMINAR
-    function elimper() {
+    function elimper()
+    {
         document.getElementById('elimiusu').style.display = 'block';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('modusuario').style.display = 'none';
         document.getElementById('crealogin').style.display = 'none';
         document.getElementById('CreaUser').style.display = 'none';
-        document.getElementById('formConsulusers').style.display = 'none'
+        document.getElementById('formConsulusers').style.display = 'none';
     }
     //PARTE CONSULTAR
-    function consulper() {
+    function consulper()
+    {
+        document.getElementById('formConsulusers').style.display = 'block'
         document.getElementById('elimiusu').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('modusuario').style.display = 'none';
         document.getElementById('crealogin').style.display = 'none';
         document.getElementById('CreaUser').style.display = 'none';
-        document.getElementById('formConsulusers').style.display = 'block'
     }
     //PARTE REGRESAR
-    function nomostrar() {
+    function nomostrar()
+    {
         document.getElementById('elimiusu').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('modusuario').style.display = 'none';
         document.getElementById('crealogin').style.display = 'none';
         document.getElementById('CreaUser').style.display = 'none';
-        document.getElementById('formConsulusers').style.display = 'none'
+        document.getElementById('formConsulusers').style.display = 'none';
     }
 
 </script>

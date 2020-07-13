@@ -5,6 +5,7 @@
             <legend>Catalogos</legend>
 
             <!--MENU BOTONES-->
+            <!--BOTONERA CREAR CATALOGOS-->
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
                 <div class="btn-group" role="group">
@@ -45,36 +46,44 @@
                     </div>
                 </div>
 
+                <!--BOTONERA MODIFICAR CATALOGOS-->
                 <div class="btn-group" role="group">
                     <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Modificar
                     </button>
                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <a class="dropdown-item" href="#">Catalogo_Empresa</a>
+                        <a class="dropdown-item" onclick="catmodcorreos()">Catalogo_Correo</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Mesa</a>
+                        <a class="dropdown-item" onclick="catmodempresas()">Catalogo_Empresa</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Categoria</a>
+                        <a class="dropdown-item" onclick="catmodmesa()">Catalogo_Mesa</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Tipo</a>
+                        <a class="dropdown-item" onclick="catmodcat()">Catalogo_Categoria</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Estado</a>
+                        <a class="dropdown-item" onclick="catmodtipo()">Catalogo_Tipo</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Accionticket</a>
+                        <a class="dropdown-item" onclick="catmodestados()">Catalogo_Estado</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_aprobacion</a>
+                        <a class="dropdown-item" onclick="catmodprior()">Catalogo_Prioridad</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" href="#">Catalogo_Respuesta</a>
+                        <a class="dropdown-item" onclick="catmodaccticket()">Catalogo_Accionticket</a>
+                        <hr class="linea" />
+
+                        <a class="dropdown-item" onclick="catmodapro()">Catalogo_aprobacion</a>
+                        <hr class="linea" />
+
+                        <a class="dropdown-item" onclick="catmodresp()">Catalogo_Respuesta</a>
                     </div>
                 </div>
 
+                <!--BOTONERA ELIMINAR CATALOGOS-->
                 <div class="btn-group" role="group">
                     <button id="btnGroupDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Eliminar
@@ -108,11 +117,12 @@
             </div>
 
             <!--SECCION DE CATALOGOS-->
+            <!--CREAR CATALOGOS-->
             <!--CATALOGO CORREO-->
 
             <div id="catCorreo">
-                <div class="col-md-4">
-                    <legend>Catalogo Correo </legend>
+                <div class="catal col-md-6">
+                    <legend>Catalogo Crear de Correo </legend>
 
                     <label>ID_TipoCorreo</label>
                     <input type="text" class="form-control" id="txtIdEmpresa" required>
@@ -125,16 +135,17 @@
                         <option selected disabled>Estado</option>
                         <option value="0">Activo</option>
                         <option value="1">Desactivado</option>
-
                     </select>
 
+                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                     <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO EMPRESA-->
 
             <div id="catEmpresa">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Empresa </legend>
 
                     <label>ID_Empresa</label>
@@ -153,13 +164,16 @@
 
                     <label>Fecha_Creacion</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO MESA-->
 
             <div id="catMesa">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Mesa </legend>
 
                     <label>ID_Mesa</label>
@@ -178,13 +192,16 @@
 
                     <label>Fecha_Creacion</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO CATEGORIA-->
 
             <div id="catCat">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Categoria </legend>
 
                     <label>ID_Categoria</label>
@@ -201,18 +218,20 @@
                         <option selected disabled>Estado</option>
                         <option value="0">Activo</option>
                         <option value="1">Desactivado</option>
-
                     </select>
 
                     <label>Fecha_Creacion</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO TIPO-->
 
             <div id="catTipo">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Tipo </legend>
 
                     <label>ID_Tipo</label>
@@ -230,13 +249,16 @@
 
                     <label>Fecha_Creacion</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO  ESTADO-->
 
             <div id="catEstado">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Estado</legend>
 
                     <label>ID_Estado</label>
@@ -254,13 +276,16 @@
 
                     <label>Fecha_Creacion</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO  PRIORIDAD-->
 
             <div id="catPrioridad">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Prioridad</legend>
 
                     <label>ID_Estado</label>
@@ -278,13 +303,16 @@
 
                     <label>Fecha_Creacion</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO  ACCION  TICKET-->
 
             <div id="catAccticket">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Accion Ticket</legend>
 
                     <label>ID_Tipo Accion</label>
@@ -302,13 +330,16 @@
                         <option value="0">Activo</option>
                         <option value="1">Desactivado</option>
                     </select>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO  TIPO APROBACION-->
 
             <div id="catAproticket">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Aprobacion Ticket</legend>
 
                     <label>ID_Tipo Aprobacion</label>
@@ -326,13 +357,16 @@
                         <option value="0">Activo</option>
                         <option value="1">Desactivado</option>
                     </select>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
             <!--CATALOGO  RESPUESTA DE APROBACION-->
 
             <div id="catResp">
-                <div class="col-md-4">
+                <div class="catal col-md-6">
                     <legend>Catalogo Respuesta Ticket</legend>
 
                     <label>ID_Respuesta</label>
@@ -350,19 +384,316 @@
                         <option value="0">Activo</option>
                         <option value="1">Desactivado</option>
                     </select>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
                 </div>
             </div>
 
+            <!--SECCION DE MODIFICAR CATALOGOS-->
+            <!--MODIFICAR CATALOGOS-->
+            <!--CATALOGO CORREO-->
+
+            <div id="catModcorreo">
+                <legend>Catalogo Modificar Correo </legend>
+                <div class="catal col-md-6">
+                    <label>ID_TipoCorreo</label>
+                    <input type="text" class="form-control" id="txtmodIdEmpresa" required>
+
+                    <legend>Catalogo Modificar Correo </legend>
+
+                    <label>Descripcion</label>
+                    <input type="text" class="form-control" id="txtmodNomemp" required>
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slecmodEscorreo">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+                    </select>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO EMPRESA-->
+
+            <div id="catModempresa">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Empresa </legend>
+
+                    <label>ID_Empresa</label>
+                    <input type="text" class="form-control" id="txtmodIdEmpresa" required>
+
+                    <legend>Catalogo Modificar Empresa </legend>
+
+                    <label>Nombres</label>
+                    <input type="text" class="form-control" id="txtmodNomemp" required>
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slecmodEsemp">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+
+                    </select>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO MESA-->
+
+            <div id="catModmesa">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Mesa </legend>
+
+                    <label>ID_Mesa</label>
+                    <input type="text" class="form-control" id="txtmodIdmesa" required>
+
+                    <legend>Catalogo Modificar Mesa </legend>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNommesa" required>
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slecmodmesa">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+
+                    </select>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO CATEGORIA-->
+
+            <div id="catModcat">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Categoria </legend>
+
+                    <label>ID_Categoria</label>
+                    <input type="text" class="form-control" id="txtmodIdcat" required>
+
+                    <legend>Catalogo Modificar Categoria </legend>
+
+                    <label>ID_Mesa</label>
+                    <input type="text" class="form-control" id="txtmodIdmesafk" required>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNomcat" required>
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slemodcat">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+
+                    </select>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO TIPO-->
+
+            <div id="catModtipo">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Tipo </legend>
+
+                    <label>ID_Tipo</label>
+                    <input type="text" class="form-control" id="txtmodIdtipo" required>
+
+                    <legend>Catalogo Modificar Tipo </legend>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNomtipo" required>
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slecmodcattipo">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+                    </select>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  ESTADO-->
+
+            <div id="catModestado">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Estado</legend>
+
+                    <label>ID_Estado</label>
+                    <input type="text" class="form-control" id="txtmodIdestado" required>
+
+                    <legend>Catalogo Modificar Estado </legend>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNomest" required>
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slecmodcatest">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+                    </select>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  PRIORIDAD-->
+
+            <div id="catModprioridad">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Prioridad</legend>
+
+                    <label>ID_Estado</label>
+                    <input type="text" class="form-control" id="txtmodIdprioridad" required>
+
+                    <legend>Catalogo Modificar Prioridad </legend>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNomprio" required>
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slecmodcatprio">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+                    </select>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  ACCION  TICKET-->
+
+            <div id="catModaccticket">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Accion Ticket</legend>
+
+                    <label>ID_Tipo Accion</label>
+                    <input type="text" class="form-control" id="txtmodIdtipoacc" required>
+
+                    <legend>Catalogo Modificar Accion Ticket </legend>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNomtipacc" required>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slecmodactiontick">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+                    </select>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  TIPO APROBACION-->
+
+            <div id="catModAproticket">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Aprobacion Ticket</legend>
+
+                    <label>ID_Tipo Aprobacion</label>
+                    <input type="text" class="form-control" id="txtmodIdacatprob" required>
+
+                    <legend>Catalogo Modificar Tipo Aprobacion </legend>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNomcatapro" required>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slemodcatapro">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+                    </select>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
+
+            <!--CATALOGO  RESPUESTA DE APROBACION-->
+
+            <div id="catModresp">
+                <div class="catal col-md-6">
+                    <legend>Catalogo Modificar Respuesta Ticket</legend>
+
+                    <label>ID_Respuesta</label>
+                    <input type="text" class="form-control" id="txtmodIdacatres" required>
+
+                    <legend>Catalogo Modificar Respuesta Ticket </legend>
+
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtmodNomcatres" required>
+
+                    <label>Fecha_Creacion</label>
+                    <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    <label>Estado</label>
+                    <select class="form-control" id="slemodcatres">
+                        <option selected disabled>Estado</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Desactivado</option>
+                    </select>
+
+                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                </div>
+            </div>
 
         </div>
     </fieldset>
 </form>
 
-<!--MOSTRAR SECCIONE DE CATALOGOS-->
+<!--MOSTRAR SECCIONES DE CATALOGOS-->
 <script>
+    //--< !--PARTE SECCION DE CREAR CATALOGOS-- >//
 
     //< !--CATALOGO CORREO-- >//
-    function catcorreos(){
+    function catcorreos() {
         document.getElementById('catCorreo').style.display = 'block';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -373,10 +704,21 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
     }
     //< !--CATALOGO EMPRESA-- >//
-    function catempresa()
-    {
+    function catempresa() {
         document.getElementById('catEmpresa').style.display = 'block';
         document.getElementById('catMesa').style.display = 'none';
         document.getElementById('catCat').style.display = 'none';
@@ -387,10 +729,21 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
     }
     //< !--CATALOGO MESA-- >//
-    function catemesa()
-    {
+    function catemesa() {
         document.getElementById('catMesa').style.display = 'block';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catCat').style.display = 'none';
@@ -401,10 +754,21 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
     }
     //< !--CATALOGO CATEGORIA-- >//
-    function catcatalog()
-    {
+    function catcatalog() {
         document.getElementById('catCat').style.display = 'block';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -415,10 +779,21 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
     }
     //< !--CATALOGO TIPO-- >//
-    function cattipo()
-    {
+    function cattipo() {
         document.getElementById('catTipo').style.display = 'block';
         document.getElementById('catCat').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
@@ -429,11 +804,21 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
-    }
 
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+    }
     //< !--CATALOGO ESTADO-- >//
-    function catEstado()
-    {
+    function catEstado() {
         document.getElementById('catEstado').style.display = 'block';
         document.getElementById('catTipo').style.display = 'none';
         document.getElementById('catCat').style.display = 'none';
@@ -443,11 +828,23 @@
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
-        document.getElementById('catResp').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none'
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+
     }
     //< !--CATALOGO PRIORIDAD-- >//
-    function catPrio()
-    {
+    function catPrio() {
         document.getElementById('catPrioridad').style.display = 'block';
         document.getElementById('catEstado').style.display = 'none';
         document.getElementById('catTipo').style.display = 'none';
@@ -458,6 +855,18 @@
         document.getElementById('catAccticket').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
     }
     //< !--CATALOGO ACCION TICKET-- >//
     function catAccticket() {
@@ -471,6 +880,18 @@
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
     }
     //< !--CATALOGO TIPO APROBACION TICKET-- >//
     function catAproticket() {
@@ -484,6 +905,19 @@
         document.getElementById('catMesa').style.display = 'none';
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
+
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+
     }
     //< !--CATALOGO RESPUESTA TICKET-- >//
     function catRespuesta() {
@@ -497,6 +931,273 @@
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
         document.getElementById('catCorreo').style.display = 'none';
-    }
-</script>
 
+        //OTRO POR ACA
+        document.getElementById('catModcorreo').style.display = 'none';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+    }
+
+    //--< !--PARTE SECCION DE MODIFICAR CATALOGOS-- >//
+
+      //< !--CATALOGO CORREO-- >//
+    function catmodcorreos()
+    {
+        document.getElementById('catModcorreo').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO EMPRESA-- >//
+    function catmodempresas()
+    {
+        document.getElementById('catModempresa').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO MESA-- >//
+    function catmodmesa() {
+        document.getElementById('catModmesa').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO CATEGORIA-- >//
+    function catmodcat() {
+        document.getElementById('catModcat').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO TIPO-- >//
+    function catmodtipo() {
+        document.getElementById('catModtipo').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO ESTADO-- >//
+    function catmodestados() {
+        document.getElementById('catModestado').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO PRIORIDAD-- >//
+    function catmodprior() {
+        document.getElementById('catModprioridad').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO ACTION TICKET-- >//
+    function catmodaccticket() {
+        document.getElementById('catModaccticket').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGOAPROBACION TICKET-- >//
+    function catmodapro() {
+        document.getElementById('catModAproticket').style.display = 'block';
+        document.getElementById('catModresp').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+      //< !--CATALOGO RESPUESTA TICKET-- >//
+    function catmodresp() {
+        document.getElementById('catModresp').style.display = 'block';
+        document.getElementById('catModAproticket').style.display = 'none';
+        document.getElementById('catModaccticket').style.display = 'none';
+        document.getElementById('catModprioridad').style.display = 'none';
+        document.getElementById('catModestado').style.display = 'none';
+        document.getElementById('catModtipo').style.display = 'none';
+        document.getElementById('catModcat').style.display = 'none';
+        document.getElementById('catModmesa').style.display = 'none';
+        document.getElementById('catModempresa').style.display = 'none';
+        document.getElementById('catModcorreo').style.display = 'none';
+
+        //--OTRO POR ACA
+        document.getElementById('catCorreo').style.display = 'none';
+        document.getElementById('catEmpresa').style.display = 'none';
+        document.getElementById('catMesa').style.display = 'none';
+        document.getElementById('catCat').style.display = 'none';
+        document.getElementById('catTipo').style.display = 'none';
+        document.getElementById('catEstado').style.display = 'none';
+        document.getElementById('catPrioridad').style.display = 'none';
+        document.getElementById('catAccticket').style.display = 'none';
+        document.getElementById('catAproticket').style.display = 'none';
+        document.getElementById('catResp').style.display = 'none';
+    }
+
+</script>
