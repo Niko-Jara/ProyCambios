@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Aprobaciones";
+    ViewBag.Title = "Acciones";
 }
 
 <!--MENU PAR2-->
@@ -17,62 +17,24 @@
             <legend>Aprobaciones</legend>
 
             <div class="btn-group" role="group">
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="creaapr()">Crear</button>
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="modapr()">Modificar</button>
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="eliminaapr()">Eliminar</button>
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="consulapro()">Consultar</button>
+                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="creaaccion()">Crear</button>
+                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="modaccion()">Modificar</button>
+                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="elimaccion()">Eliminar</button>
+                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="consulaccion()">Consultar</button>
             </div>
-            <!--SECCION CREAR APROBACIONES-->
-            <div id="formCrearAprobacion">
-                <legend>Creación de Aprobaciones </legend>
+            <!--SECCION CREAR ACCIONES-->
+            <div id="formCrearAccion">
+                <legend>Creación de Acciones </legend>
 
                 <!--PRIMERA COLUMNA -->
                 <div class="col-md-4">
                     <legend>Información Aprobaciones</legend>
 
-                    <label>ID_Aprobacion</label>
+                    <label>ID_Accion</label>
                     <input type="text" class="form-control" id="txtIdAccion" required>
 
                     <label>ID_Ticket</label>
                     <input type="text" class="form-control" id="txtIdtick" required>
-
-                    <label>ID_Tipo Aprobacion</label>
-                    <select class="form-control" id="slectipaction">
-                        <option selected disabled>Empresa</option>
-                        <option value="0">IISA</option>
-                        <option value="1">AGTR</option>
-                        <option value="2">GTI</option>
-                    </select>
-
-                    <label>ID_Tipo Respuesta</label>
-                    <select class="form-control" id="slectipres">
-                        <option selected disabled>Empresa</option>
-                        <option value="0">IISA</option>
-                        <option value="1">AGTR</option>
-                        <option value="2">GTI</option>
-                    </select>
-                </div>
-
-                <!--SEGUNDA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Involucrados</legend>
-
-                    <label>Usuario_Creador</label>
-                    <select class="form-control" id="slectUsercr">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Usuario_Acepta</label>
-                    <select class="form-control" id="slectUsercr">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
 
                     <label>ID_Empresa</label>
                     <select class="form-control" id="slectidEmp">
@@ -84,15 +46,34 @@
 
                 </div>
 
+                <!--SEGUNDA COLUMNA -->
+                <div class="col-md-4">
+                    <legend>Tipos</legend>
+
+                    <label>ID_Tipo Accion</label>
+                    <select class="form-control" id="slectipres">
+                        <option selected disabled>Empresa</option>
+                        <option value="0">IISA</option>
+                        <option value="1">AGTR</option>
+                        <option value="2">GTI</option>
+                    </select>
+
+                    <label>Usuario_Accion</label>
+                    <select class="form-control" id="slectUsercr">
+                        <option selected disabled>Roles</option>
+                        <option value="0">Administrador</option>
+                        <option value="1">Usuario</option>
+                        <option value="2">Tecnico</option>
+                    </select>
+
+                </div>
+
 
                 <!--TERCERA COLUMNA -->
                 <div id="inputfechas" class="col-md-4">
                     <legend>Fechas</legend>
 
                     <label>Fecha_Solicitud</label>
-                    <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                    <label>Fecha_Respuesta</label>
                     <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                 </div>
@@ -109,33 +90,25 @@
             </div>
 
             <!--SECCION MODIFICAR APROBACIONES-->
-            <div id="formModAprobacion">
+            <div id="formModAccion">
                 <legend>Modificación de Aprobaciones </legend>
 
                 <!--PRIMERA COLUMNA -->
                 <div class="col-md-12">
-                    <legend>Información Aprobaciones</legend>
+                    <legend>Información Acciones</legend>
 
-                    <label>ID_Aprobacion</label>
+                    <label>ID_Accion</label>
                     <input type="text" class="form-control" id="txtIdAccion" required>
                 </div>
                 <div class="col-md-4">
 
-                    <legend>Información Aprobaciones</legend>
+                    <legend>Información Acciones</legend>
 
                     <label>ID_Ticket</label>
                     <input type="text" class="form-control" id="txtIdtick" required>
 
-                    <label>ID_Tipo Aprobacion</label>
-                    <select class="form-control" id="slectipaction">
-                        <option selected disabled>Empresa</option>
-                        <option value="0">IISA</option>
-                        <option value="1">AGTR</option>
-                        <option value="2">GTI</option>
-                    </select>
-
-                    <label>ID_Tipo Respuesta</label>
-                    <select class="form-control" id="slectipres">
+                    <label>ID_Empresa</label>
+                    <select class="form-control" id="slectidEmp">
                         <option selected disabled>Empresa</option>
                         <option value="0">IISA</option>
                         <option value="1">AGTR</option>
@@ -145,31 +118,22 @@
 
                 <!--SEGUNDA COLUMNA -->
                 <div class="col-md-4">
-                    <legend>Involucrados</legend>
+                    <legend>Tipos</legend>
 
-                    <label>Usuario_Creador</label>
-                    <select class="form-control" id="slectUsercr">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                    <label>Usuario_Acepta</label>
-                    <select class="form-control" id="slectUsercr">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-
-                    <label>ID_Empresa</label>
-                    <select class="form-control" id="slectidEmp">
+                    <label>ID_Tipo Accion</label>
+                    <select class="form-control" id="slectipres">
                         <option selected disabled>Empresa</option>
                         <option value="0">IISA</option>
                         <option value="1">AGTR</option>
                         <option value="2">GTI</option>
+                    </select>
+
+                    <label>Usuario_Accion</label>
+                    <select class="form-control" id="slectUsercr">
+                        <option selected disabled>Roles</option>
+                        <option value="0">Administrador</option>
+                        <option value="1">Usuario</option>
+                        <option value="2">Tecnico</option>
                     </select>
 
                 </div>
@@ -180,9 +144,6 @@
                     <legend>Fechas</legend>
 
                     <label>Fecha_Solicitud</label>
-                    <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                    <label>Fecha_Respuesta</label>
                     <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                 </div>
@@ -199,12 +160,12 @@
             </div>
 
             <!--SECCION ELIMINAR APROBACIONES-->
-            <div id="formElimapro">
+            <div id="formElimaccion">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Aprobacion</legend>
+                    <legend>Catalogo Eliminar Accion</legend>
 
                     <label>ID_Aprobacion</label>
-                    <input type="text" class="form-control" id="txtelimapr" required>
+                    <input type="text" class="form-control" id="txtelimacc" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -213,11 +174,11 @@
 
             <!--SECCION CONSULTAR APROBACIONES-->
             <!--SE CONSULTAN LOS REGISTROS USUARIO PERSONA-->
-            <div id="formConsulapro">
+            <div id="formConsulaccio">
                 <legend>Consultar Aprobaciones </legend>
 
                 <!--BUSCADOR -->
-                <div id="Busqapro">
+                <div id="Busqacc">
                     <div class="col-xs-1">
                         <label id="labCambio">Id_Usuario</label>
                     </div>
@@ -230,7 +191,7 @@
                 </div>
 
                 <!--GRID-VIEW // Table -->
-                <table id="GridApro" class="table table-dark">
+                <table id="GridAcc" class="table table-dark">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -280,36 +241,36 @@
                 </table>
             </div>
         </div>
-   </fieldset>
- </form>
+    </fieldset>
+</form>
 
 <script>
-    //<!--SECCION CREAR APROBACIONES-->
-    function creaapr() {
-        document.getElementById('formCrearAprobacion').style.display = 'block';
-        document.getElementById('formModAprobacion').style.display = 'none';
-        document.getElementById('formElimapro').style.display = 'none'; 
-        document.getElementById('formConsulapro').style.display = 'none';
+    //<!--SECCION CREAR ACCIONES-->
+    function creaaccion() {
+        document.getElementById('formCrearAccion').style.display = 'block';
+        document.getElementById('formModAccion').style.display = 'none';
+        document.getElementById('formElimaccion').style.display = 'none';
+        document.getElementById('formConsulaccio').style.display = 'none';
     }
-    //< !--SECCION MODIFICAR APROBACIONES-- >
-    function modapr() {
-        document.getElementById('formCrearAprobacion').style.display = 'none';
-        document.getElementById('formModAprobacion').style.display = 'block';
-        document.getElementById('formElimapro').style.display = 'none';
-        document.getElementById('formConsulapro').style.display = 'none';
+    //<!--SECCION MODIFICAR ACCIONES-->
+    function modaccion() {
+        document.getElementById('formModAccion').style.display = 'block';
+        document.getElementById('formCrearAccion').style.display = 'none';
+        document.getElementById('formElimaccion').style.display = 'none';
+        document.getElementById('formConsulaccio').style.display = 'none';
     }
-    //<!--SECCION ELIMINAR APROBACIONES-->
-    function eliminaapr() {
-        document.getElementById('formCrearAprobacion').style.display = 'none';
-        document.getElementById('formModAprobacion').style.display = 'none';
-        document.getElementById('formElimapro').style.display = 'block';
-        document.getElementById('formConsulapro').style.display = 'none';
+    //<!--SECCION ELIMINAR ACCIONES-->
+    function elimaccion() {
+        document.getElementById('formElimaccion').style.display = 'block';
+        document.getElementById('formModAccion').style.display = 'none';
+        document.getElementById('formCrearAccion').style.display = 'none';
+        document.getElementById('formConsulaccio').style.display = 'none';
     }
-    //<!--SECCION CONSULTAR APROBACIONES-->
-    function consulapro() {
-        document.getElementById('formCrearAprobacion').style.display = 'none';
-        document.getElementById('formModAprobacion').style.display = 'none';
-        document.getElementById('formElimapro').style.display = 'none';
-        document.getElementById('formConsulapro').style.display = 'block';
+    //<!--SECCION CONSULTAR ACCIONES-->
+    function consulaccion() {
+        document.getElementById('formConsulaccio').style.display = 'block';
+        document.getElementById('formModAccion').style.display = 'none';
+        document.getElementById('formCrearAccion').style.display = 'none';
+        document.getElementById('formElimaccion').style.display = 'none';
     }
 </script>
