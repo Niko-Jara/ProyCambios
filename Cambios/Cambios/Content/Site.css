@@ -481,21 +481,21 @@ body {
 }
 /*CATALOGOS*/
 /*CREACION DE CATALOGOS*/
-#catCorreo, #catEmpresa, #catMesa, #catCat, #catTipo, #catEstado, #catPrioridad, #catAccticket, #catAproticket, #catResp {
+#catCorreo, #catEmpresa, #catMesa, #catCat, #catTipo, #catEstado, #catPrioridad, #catAccticket, #catAproticket, #catResp, #CatcrearRoles {
     display: none;
 }
 /*MODIFICACION DE CATALOGOS*/
-#catModresp, #catModAproticket, #catModaccticket, #catModprioridad, #catModestado, #catModtipo, #catModcat, #catModmesa, #catModempresa, #catModcorreo {
+#catModresp, #catModAproticket, #catModaccticket, #catModprioridad, #catModestado, #catModtipo, #catModcat, #catModmesa, #catModempresa, #catModcorreo, #CatmodRoles {
     display: none;
 }
 /*ELIMINACION DE CATALOGOS*/
-#catElimresp, #catElimAproticket, #catElimaccticket, #catElimprioridad, #catElimestado, #catElimtipo, #catElimcat, #catElimmesa, #catElimempresa, #catElimcorreo {
+#catElimresp, #catElimAproticket, #catElimaccticket, #catElimprioridad, #catElimestado, #catElimtipo, #catElimcat, #catElimmesa, #catElimempresa, #catElimcorreo, #CatelimRoles {
     display: none;
 }
 /*DISEÑO DE PANTALLAS DE CATALOGOS*/
 .catal {
-    margin-left:300px;
-    margin-top:100px;
+    margin-left: 300px;
+    margin-top: 100px;
 }
 .btncat {
     color: white;
