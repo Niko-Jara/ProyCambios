@@ -22,363 +22,366 @@
             <!--SECCION MOSTRAR SECCION PRINCIPAL -->
             <div id="formUsuarios">
                 <legend>Registro de usuarios</legend>
-                <div class="btn-group" role="group">
-                    <button type="button" id="btnCrear" class="btn btn-dark" onclick="mostruser()">Crear</button>
-                    <button type="button" id="btnMod" class="btn btn-dark" onclick="modper()">Modificar</button>
-                    <button type="button" id="btnElim" class="btn btn-dark" onclick="elimper()">Eliminar</button>
-                    <button type="button" id="btnConsul" class="btn btn-dark" onclick="consulper()">Consultar</button>
-                    <button type="button" id="btnReg" class="btn btn-dark" onclick="nomostrar()">Regresar</button>
-                </div>
 
-                <!--CREACION DE LOS USUARIOS -->
-                <div id="CreaUser">
-                    <legend>Informacion general</legend>
-
-                    <!--INFO PERSONAL -->
-                    <div class="col-md-4">
-                        <legend>Datos Personales</legend>
-
-                        <label>Identificación</label>
-                        <input type="text" class="form-control" id="txtIdperson" required>
-
-                        <label>Nombre</label>
-                        <input type="text" class="form-control" id="txtNombre" required>
-
-                        <label>Primer Apellido</label>
-                        <input type="text" class="form-control" id="txtApellido1" required>
-
-                        <label>Segundo Apellido</label>
-                        <input type="text" class="form-control" id="txtApellido2" required>
-
-                        <label>Estado</label>
-                        <select class="form-control" id="slectEst">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-                    </div>
-
-                    <!--CONTACTO-->
-                    <div class="col-md-4">
-                        <legend>Contacto</legend>
-
-                        <label>Correo</label>
-                        <input type="text" class="form-control" id="txtCorreo" required>
-
-                        <label>Tipo Correo</label>
-                        <select class="form-control" id="slectCorreo">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Personal</option>
-                            <option value="1">Laboral</option>
-                        </select>
-
-                        <label>Estado Correo</label>
-                        <select class="form-control" id="slectEstemail">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-
-                    </div>
-
-                    <!--EMPRESA RELACIONA AL USUARIO SOLO EMPRESA-->
-                    <div class="col-md-4">
-                        <legend>Empresa Relacionada</legend>
-
-                        <label>Código Empresa</label>
-                        <input type="text" class="form-control" id="txtId_Empresa" required>
-
-                        <label>Nombre Empresa</label>
-                        <input type="text" class="form-control" id="txtNombreemp" required>
-
-                        <label>Fecha Creación</label>
-                        <input class="form-control" type="date" id="txtFecemp" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                        <label>Estado Empresa</label>
-                        <select class="form-control" id="slectEmpresa">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="button" id="btnSigu" class="btn btn-dark" onclick="esconuser()">Siguiente >></button>
+                <div class="btn-group col-md-12" role="group">
+                    <div class="groupbtn">
+                        <button type="button" class=" btnmenu btn btn-dark" onclick="mostruser()"><img src="~/img/add.png" /></button>
+                        <button type="button" class="btnmenu btn btn-dark" onclick="modper()"><img src="~/img/edita.png" /></button>
+                        <button type="button" class="btnmenu btn btn-dark" onclick="elimper()"><img src="~/img/elim.png" /></button>
+                        <button type="button" class="btnmenu btn btn-dark" onclick="consulper()"><img src="~/img/bus.png" /></button>
+                        <button type="button" class="btnmenu btn btn-dark" onclick="nomostrar()">Regresar</button>
                     </div>
                 </div>
 
-                <!--SE CREAN CREDENCIALES DE USUARIO-->
-                <div id="crealogin">
-                    <legend>Credenciales de Usuario</legend>
+                    <!--CREACION DE LOS USUARIOS -->
+                    <div id="CreaUser">
+                        <legend>Informacion general</legend>
 
-                    <div id="colum6" class="col-md-6">
-                        <label>Código Usuario</label>
-                        <input type="text" class="form-control" id="txtId_Usuario" required>
-
-                        <label>Nombre Usuario</label>
-                        <input type="text" class="form-control" id="txtNomuser" required>
-
-                        <label>Contraseña</label>
-                        <input type="text" class="form-control" id="txtPass" required>
-
-                        <label>Fecha Ingreso</label>
-                        <input class="form-control" type="date" id="txtFecing" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                        <label>Estado Empresa</label>
-                        <select class="form-control" id="slectEmpresa">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-
-                        <label>Rol</label>
-                        <select class="form-control" id="slectRol">
-                            <option selected disabled>Rol</option>
-                            <option value="0">Administrador</option>
-                            <option value="1">Usuario</option>
-                            <option value="2">Tecnico</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="button" id="btnContinuar" class="btn btn-dark" onclick="mostruser()">Regresar<<</button>
-                        <button type="button" id="lvaciar" class="btn btn-dark">Limpiar</button>
-                        <button type="button" id="btnsav" class="btn btn-dark">Guardar</button>
-                    </div>
-                </div>
-
-                <!--SECCION DE MODIFICACION-->
-                <div id="modPersona">
-                    <legend>Información general</legend>
-
-                    <div id="modcol12" class="col-md-12">
-
+                        <!--INFO PERSONAL -->
                         <div class="col-md-4">
-                            <label>Identificacion</label>
+                            <legend>Datos Personales</legend>
+
+                            <label>Identificación</label>
                             <input type="text" class="form-control" id="txtIdperson" required>
+
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" id="txtNombre" required>
+
+                            <label>Primer Apellido</label>
+                            <input type="text" class="form-control" id="txtApellido1" required>
+
+                            <label>Segundo Apellido</label>
+                            <input type="text" class="form-control" id="txtApellido2" required>
+
+                            <label>Estado</label>
+                            <select class="form-control" id="slectEst">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
                         </div>
 
+                        <!--CONTACTO-->
                         <div class="col-md-4">
-                            <label>Id_Empresa</label>
+                            <legend>Contacto</legend>
+
+                            <label>Correo</label>
+                            <input type="text" class="form-control" id="txtCorreo" required>
+
+                            <label>Tipo Correo</label>
+                            <select class="form-control" id="slectCorreo">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Personal</option>
+                                <option value="1">Laboral</option>
+                            </select>
+
+                            <label>Estado Correo</label>
+                            <select class="form-control" id="slectEstemail">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
+
+                        </div>
+
+                        <!--EMPRESA RELACIONA AL USUARIO SOLO EMPRESA-->
+                        <div class="col-md-4">
+                            <legend>Empresa Relacionada</legend>
+
+                            <label>Código Empresa</label>
                             <input type="text" class="form-control" id="txtId_Empresa" required>
+
+                            <label>Nombre Empresa</label>
+                            <input type="text" class="form-control" id="txtNombreemp" required>
+
+                            <label>Fecha Creación</label>
+                            <input class="form-control" type="date" id="txtFecemp" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                            <label>Estado Empresa</label>
+                            <select class="form-control" id="slectEmpresa">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" id="btnSigu" class="btn btn-dark" onclick="esconuser()">Siguiente >></button>
                         </div>
                     </div>
 
-                    <!--SECCION DE MODIFICACION DE PERSONA-->
-                    <!--INFO PERSONAL -->
-                    <div class="col-md-4">
-                        <legend>Datos Personales</legend>
+                    <!--SE CREAN CREDENCIALES DE USUARIO-->
+                    <div id="crealogin">
+                        <legend>Credenciales de Usuario</legend>
 
-                        <label>Nombre</label>
-                        <input type="text" class="form-control" id="txtNombre" required>
-
-                        <label>Primer Apellido</label>
-                        <input type="text" class="form-control" id="txtApellido1" required>
-
-                        <label>Segundo Apellido</label>
-                        <input type="text" class="form-control" id="txtApellido2" required>
-
-                        <label>Estado</label>
-                        <select class="form-control" id="slectEst">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-                    </div>
-
-                    <!--CONTACTO-->
-                    <div class="col-md-4">
-                        <legend>Contacto</legend>
-
-                        <label>Correo</label>
-                        <input type="text" class="form-control" id="txtCorreo" required>
-
-                        <label>Tipo Correo</label>
-                        <select class="form-control" id="slectCorreo">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Personal</option>
-                            <option value="1">Laboral</option>
-                        </select>
-
-                        <label>Estado Correo</label>
-                        <select class="form-control" id="slectEstemail">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-
-                    </div>
-
-                    <!--EMPRESA RELACIONA AL USUARIO SOLO EMPRESA-->
-                    <div class="col-md-4">
-                        <legend>Empresa Relacionada</legend>
-
-                        <label>Nombre Empresa</label>
-                        <input type="text" class="form-control" id="txtNombreemp" required>
-
-                        <label>Fecha Creación</label>
-                        <input class="form-control" type="date" id="txtFecemp" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                        <label>Estado Empresa</label>
-                        <select class="form-control" id="slectEmpresa">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="button" id="btncont" class="btn btn-dark" onclick="moduser()">Siguiente >></button>
-                    </div>
-                </div>
-
-                <!--SE MODIFICAN CREDENCIALES DE USUARIO-->
-                <!--SECCION DE MODIFICACION DE USUARIO-->
-                <div id="modusuario">
-                    <legend>Credenciales de Usuario</legend>
-
-                    <div class="col-md-12">
-                        <div class="col-md-6">
-                            <label>Id_Usuario</label>
+                        <div id="colum6" class="col-md-6">
+                            <label>Código Usuario</label>
                             <input type="text" class="form-control" id="txtId_Usuario" required>
+
+                            <label>Nombre Usuario</label>
+                            <input type="text" class="form-control" id="txtNomuser" required>
+
+                            <label>Contraseña</label>
+                            <input type="text" class="form-control" id="txtPass" required>
+
+                            <label>Fecha Ingreso</label>
+                            <input class="form-control" type="date" id="txtFecing" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                            <label>Estado Empresa</label>
+                            <select class="form-control" id="slectEmpresa">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
+
+                            <label>Rol</label>
+                            <select class="form-control" id="slectRol">
+                                <option selected disabled>Rol</option>
+                                <option value="0">Administrador</option>
+                                <option value="1">Usuario</option>
+                                <option value="2">Tecnico</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" id="btnContinuar" class="btn btn-dark" onclick="mostruser()">Regresar<<</button>
+                            <button type="button" id="lvaciar" class="btn btn-dark">Limpiar</button>
+                            <button type="button" id="btnsav" class="btn btn-dark">Guardar</button>
                         </div>
                     </div>
 
-                    <div id="colmd6" class="col-md-6">
-                        <!--QUITAR DE ACÁ-->
-                        <legend>Datos de Usuario</legend>
+                    <!--SECCION DE MODIFICACION-->
+                    <div id="modPersona">
+                        <legend>Información general</legend>
 
-                        <label>Nombre Usuario</label>
-                        <input type="text" class="form-control" id="txtNomuser" required>
+                        <div id="modcol12" class="col-md-12">
 
-                        <label>Contraseña</label>
-                        <input type="text" class="form-control" id="txtPass" required>
+                            <div class="col-md-4">
+                                <label>Identificacion</label>
+                                <input type="text" class="form-control" id="txtIdperson" required>
+                            </div>
 
-                        <label>Fecha Ingreso</label>
-                        <input class="form-control" type="date" id="txtFecing" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                        <label>Estado Empresa</label>
-                        <select class="form-control" id="slectEmpresa">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-
-                        <label>Rol</label>
-                        <select class="form-control" id="slectRol">
-                            <option selected disabled>Rol</option>
-                            <option value="0">Administrador</option>
-                            <option value="1">Usuario</option>
-                            <option value="2">Tecnico</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="button" id="btnregres" class="btn btn-dark" onclick="modper()">Regresar<<</button>
-                        <button type="button" id="btnli" class="btn btn-dark"> Limpiar</button>
-                        <button type="button" id="btngua" class="btn btn-dark"> Guardar</button>
-                    </div>
-                </div>
-
-                <!--SE ELIMINAN LOS REGISTROS USUARIO PERSONA-->
-                <div id="elimiusu">
-                    <legend>Informacion general</legend>
-
-                    <!--ELIMINACION DE REGISTROS -->
-                    <div id="colsix" class="col-md-6">
-
-                        <legend>Eliminar datos de Usuarios</legend>
-
-                        <label>Código Usuario</label>
-                        <input type="text" class="form-control" id="txtIdperson" required>
-
-                        <label>Nombre Usuario</label>
-                        <input type="text" class="form-control" id="txtNombre" required>
-
-                        <label>Identificacion Empresa</label>
-                        <input type="text" class="form-control" id="txtApellido1" required>
-
-                        <label>Identificacion de Persona</label>
-                        <input type="text" class="form-control" id="txtApellido2" required>
-
-                        <label>Estado</label>
-                        <select class="form-control" id="slectPers">
-                            <option selected disabled>Estado</option>
-                            <option value="0">Desabilitado</option>
-                            <option value="1">Habilitado</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="button" id="btnVaciar" class="btn btn-dark">Limpiar</button>
-                        <button type="button" id="btnEliminar" class="btn btn-dark">Eliminar</button>
-                    </div>
-                </div>
-
-                <!--SE CONSULTAN LOS REGISTROS USUARIO PERSONA-->
-                <div id="formConsulusers">
-                    <legend>Consultar Usuario </legend>
-
-                    <!--BUSCADOR -->
-                    <div id="Busqusers">
-                        <div class="col-xs-1">
-                            <label id="labCambio">Id_Usuario</label>
+                            <div class="col-md-4">
+                                <label>Id_Empresa</label>
+                                <input type="text" class="form-control" id="txtId_Empresa" required>
+                            </div>
                         </div>
+
+                        <!--SECCION DE MODIFICACION DE PERSONA-->
+                        <!--INFO PERSONAL -->
                         <div class="col-md-4">
-                            <input type="text" class="form-control" id="txtBusqusers" required>
+                            <legend>Datos Personales</legend>
+
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" id="txtNombre" required>
+
+                            <label>Primer Apellido</label>
+                            <input type="text" class="form-control" id="txtApellido1" required>
+
+                            <label>Segundo Apellido</label>
+                            <input type="text" class="form-control" id="txtApellido2" required>
+
+                            <label>Estado</label>
+                            <select class="form-control" id="slectEst">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
                         </div>
-                        <div class="col-xs-1">
-                            <button type="button" id="btnBuscar" class="btn btn-dark">Buscar</button>
+
+                        <!--CONTACTO-->
+                        <div class="col-md-4">
+                            <legend>Contacto</legend>
+
+                            <label>Correo</label>
+                            <input type="text" class="form-control" id="txtCorreo" required>
+
+                            <label>Tipo Correo</label>
+                            <select class="form-control" id="slectCorreo">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Personal</option>
+                                <option value="1">Laboral</option>
+                            </select>
+
+                            <label>Estado Correo</label>
+                            <select class="form-control" id="slectEstemail">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
+
+                        </div>
+
+                        <!--EMPRESA RELACIONA AL USUARIO SOLO EMPRESA-->
+                        <div class="col-md-4">
+                            <legend>Empresa Relacionada</legend>
+
+                            <label>Nombre Empresa</label>
+                            <input type="text" class="form-control" id="txtNombreemp" required>
+
+                            <label>Fecha Creación</label>
+                            <input class="form-control" type="date" id="txtFecemp" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                            <label>Estado Empresa</label>
+                            <select class="form-control" id="slectEmpresa">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" id="btncont" class="btn btn-dark" onclick="moduser()">Siguiente >></button>
                         </div>
                     </div>
 
-                    <!--GRID-VIEW // Table -->
-                    <table id="GridUser" class="table table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <!--SE MODIFICAN CREDENCIALES DE USUARIO-->
+                    <!--SECCION DE MODIFICACION DE USUARIO-->
+                    <div id="modusuario">
+                        <legend>Credenciales de Usuario</legend>
+
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <label>Id_Usuario</label>
+                                <input type="text" class="form-control" id="txtId_Usuario" required>
+                            </div>
+                        </div>
+
+                        <div id="colmd6" class="col-md-6">
+                            <!--QUITAR DE ACÁ-->
+                            <legend>Datos de Usuario</legend>
+
+                            <label>Nombre Usuario</label>
+                            <input type="text" class="form-control" id="txtNomuser" required>
+
+                            <label>Contraseña</label>
+                            <input type="text" class="form-control" id="txtPass" required>
+
+                            <label>Fecha Ingreso</label>
+                            <input class="form-control" type="date" id="txtFecing" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                            <label>Estado Empresa</label>
+                            <select class="form-control" id="slectEmpresa">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
+
+                            <label>Rol</label>
+                            <select class="form-control" id="slectRol">
+                                <option selected disabled>Rol</option>
+                                <option value="0">Administrador</option>
+                                <option value="1">Usuario</option>
+                                <option value="2">Tecnico</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" id="btnregres" class="btn btn-dark" onclick="modper()">Regresar<<</button>
+                            <button type="button" id="btnli" class="btn btn-dark"> Limpiar</button>
+                            <button type="button" id="btngua" class="btn btn-dark"> Guardar</button>
+                        </div>
+                    </div>
+
+                    <!--SE ELIMINAN LOS REGISTROS USUARIO PERSONA-->
+                    <div id="elimiusu">
+                        <legend>Informacion general</legend>
+
+                        <!--ELIMINACION DE REGISTROS -->
+                        <div id="colsix" class="col-md-6">
+
+                            <legend>Eliminar datos de Usuarios</legend>
+
+                            <label>Código Usuario</label>
+                            <input type="text" class="form-control" id="txtIdperson" required>
+
+                            <label>Nombre Usuario</label>
+                            <input type="text" class="form-control" id="txtNombre" required>
+
+                            <label>Identificacion Empresa</label>
+                            <input type="text" class="form-control" id="txtApellido1" required>
+
+                            <label>Identificacion de Persona</label>
+                            <input type="text" class="form-control" id="txtApellido2" required>
+
+                            <label>Estado</label>
+                            <select class="form-control" id="slectPers">
+                                <option selected disabled>Estado</option>
+                                <option value="0">Desabilitado</option>
+                                <option value="1">Habilitado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" id="btnVaciar" class="btn btn-dark">Limpiar</button>
+                            <button type="button" id="btnEliminar" class="btn btn-dark">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <!--SE CONSULTAN LOS REGISTROS USUARIO PERSONA-->
+                    <div id="formConsulusers">
+                        <legend>Consultar Usuario </legend>
+
+                        <!--BUSCADOR -->
+                        <div id="Busqusers">
+                            <div class="col-xs-1">
+                                <label id="labCambio">Id_Usuario</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="txtBusqusers" required>
+                            </div>
+                            <div class="col-xs-1">
+                                <button type="button" id="btnBuscar" class="btn btn-dark">Buscar</button>
+                            </div>
+                        </div>
+
+                        <!--GRID-VIEW // Table -->
+                        <table id="GridUser" class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-    </fieldset>
+</fieldset>
 </form>
 
 <!-- MOSTRAR SECCIONES CREAR USUARIO Y CREAR PERSONA-->

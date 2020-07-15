@@ -226,7 +226,15 @@ body {
 #formPrinmod label {
     margin-top: 12px;
 }
-#btnMod, #btnElim, #btnCrear, #btnReg, #btnEliminar, #btnConsul {
+.btnmenu img {
+    width:45px; 
+    height:45px;
+}
+.groupbtn {
+   float:right;
+   border:1px solid red;
+}
+/*#btnMod, #btnElim, #btnCrear, #btnReg, #btnEliminar, #btnConsul {
     margin-top: 12px;
     background-color: black;
     color: white;
@@ -240,8 +248,7 @@ body {
     border: 1px solid #898483;
     min-width: 130px;
     box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
- }
-
+ }*/
 /*PANTALLA DE MODIFICACIONES*/
 #tito {
     margin: 0px;

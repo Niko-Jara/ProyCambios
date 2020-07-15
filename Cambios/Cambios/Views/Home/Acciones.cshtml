@@ -17,231 +17,233 @@
 
             <legend>Acciones</legend>
 
-            <div class="btn-group" role="group">
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="creaaccion()">Crear</button>
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="modaccion()">Modificar</button>
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="elimaccion()">Eliminar</button>
-                <button type="button" class="btnGroupDrop1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="consulaccion()">Consultar</button>
-            </div>
-            <!--SECCION CREAR ACCIONES-->
-            <div id="formCrearAccion">
-                <legend>Creación de Acciones </legend>
-
-                <!--PRIMERA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Información Acciones</legend>
-
-                    <label>Código Acción</label>
-                    <input type="text" class="form-control" id="txtIdAccion" required>
-
-                    <label>Código Ticket</label>
-                    <input type="text" class="form-control" id="txtIdtick" required>
-
-                    <label>Código Empresa</label>
-                    <select class="form-control" id="slectidEmp">
-                        <option selected disabled>Empresa</option>
-                        <option value="0">IISA</option>
-                        <option value="1">AGTR</option>
-                        <option value="2">GTI</option>
-                    </select>
-
-                </div>
-
-                <!--SEGUNDA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Tipos</legend>
-
-                    <label>Código Tipo Acción</label>
-                    <select class="form-control" id="slectipres">
-                        <option selected disabled>Empresa</option>
-                        <option value="0">IISA</option>
-                        <option value="1">AGTR</option>
-                        <option value="2">GTI</option>
-                    </select>
-
-                    <label>Usuario Acción</label>
-                    <select class="form-control" id="slectUsercr">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                </div>
-
-
-                <!--TERCERA COLUMNA -->
-                <div id="inputfechas" class="col-md-4">
-                    <legend>Fechas</legend>
-
-                    <label>Fecha Solicitud</label>
-                    <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                </div>
-
-                <!--COLUMNA COMPLETA-->
-                <div id="causa" class="col-md-12">
-                    <label>Causa Raíz</label>
-                    <textarea class="form-control">  </textarea>
-                </div>
-
-                <button type="button" class="btncat  btn btn-dark">Limpiar</button>
-                <button type="button" class="btncat  btn btn-dark">Guardar</button>
-
-            </div>
-
-            <!--SECCION MODIFICAR APROBACIONES-->
-            <div id="formModAccion">
-                <legend>Modificación de Aprobaciones </legend>
-
-                <!--PRIMERA COLUMNA -->
-                <div class="col-md-12">
-                    <legend>Información Acciones</legend>
-
-                    <label>Código Acción</label>
-                    <input type="text" class="form-control" id="txtIdAccion" required>
-                </div>
-                <div class="col-md-4">
-
-                    <legend>Información Acciones</legend>
-
-                    <label>Código Ticket</label>
-                    <input type="text" class="form-control" id="txtIdtick" required>
-
-                    <label>Código Empresa</label>
-                    <select class="form-control" id="slectidEmp">
-                        <option selected disabled>Empresa</option>
-                        <option value="0">IISA</option>
-                        <option value="1">AGTR</option>
-                        <option value="2">GTI</option>
-                    </select>
-                </div>
-
-                <!--SEGUNDA COLUMNA -->
-                <div class="col-md-4">
-                    <legend>Tipos</legend>
-
-                    <label>Código Tipo Acción</label>
-                    <select class="form-control" id="slectipres">
-                        <option selected disabled>Empresa</option>
-                        <option value="0">IISA</option>
-                        <option value="1">AGTR</option>
-                        <option value="2">GTI</option>
-                    </select>
-
-                    <label>Usuario Acción</label>
-                    <select class="form-control" id="slectUsercr">
-                        <option selected disabled>Roles</option>
-                        <option value="0">Administrador</option>
-                        <option value="1">Usuario</option>
-                        <option value="2">Tecnico</option>
-                    </select>
-
-                </div>
-
-
-                <!--TERCERA COLUMNA -->
-                <div id="inputfechas" class="col-md-4">
-                    <legend>Fechas</legend>
-
-                    <label>Fecha Solicitud</label>
-                    <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-
-                </div>
-
-                <!--COLUMNA COMPLETA-->
-                <div id="causa" class="col-md-12">
-                    <label>Causa Raíz</label>
-                    <textarea class="form-control">  </textarea>
-                </div>
-
-                <button type="button" class="btncat  btn btn-dark">Limpiar</button>
-                <button type="button" class="btncat  btn btn-dark">Guardar</button>
-
-            </div>
-
-            <!--SECCION ELIMINAR APROBACIONES-->
-            <div id="formElimaccion">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Acción</legend>
-
-                    <label>Código Aprobación</label>
-                    <input type="text" class="form-control" id="txtelimacc" required>
-
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+            <div class="btn-group col-md-12" role="group">
+                <div class="groupbtn">
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="creaaccion()"><img src="~/img/add.png" /></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="modaccion()"><img src="~/img/edita.png" /></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="elimaccion()"><img src="~/img/elim.png" /></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="consulaccion()"><img src="~/img/bus.png" /></button>
                 </div>
             </div>
+                <!--SECCION CREAR ACCIONES-->
+                <div id="formCrearAccion">
+                    <legend>Creación de Acciones </legend>
 
-            <!--SECCION CONSULTAR APROBACIONES-->
-            <!--SE CONSULTAN LOS REGISTROS USUARIO PERSONA-->
-            <div id="formConsulaccio">
-                <legend>Consultar Aprobaciones </legend>
+                    <!--PRIMERA COLUMNA -->
+                    <div class="col-md-4">
+                        <legend>Información Acciones</legend>
 
-                <!--BUSCADOR -->
-                <div id="Busqacc">
-                    <div class="col-xs-1">
-                        <label id="labCambio">Id_Usuario</label>
+                        <label>Código Acción</label>
+                        <input type="text" class="form-control" id="txtIdAccion" required>
+
+                        <label>Código Ticket</label>
+                        <input type="text" class="form-control" id="txtIdtick" required>
+
+                        <label>Código Empresa</label>
+                        <select class="form-control" id="slectidEmp">
+                            <option selected disabled>Empresa</option>
+                            <option value="0">IISA</option>
+                            <option value="1">AGTR</option>
+                            <option value="2">GTI</option>
+                        </select>
+
+                    </div>
+
+                    <!--SEGUNDA COLUMNA -->
+                    <div class="col-md-4">
+                        <legend>Tipos</legend>
+
+                        <label>Código Tipo Acción</label>
+                        <select class="form-control" id="slectipres">
+                            <option selected disabled>Empresa</option>
+                            <option value="0">IISA</option>
+                            <option value="1">AGTR</option>
+                            <option value="2">GTI</option>
+                        </select>
+
+                        <label>Usuario Acción</label>
+                        <select class="form-control" id="slectUsercr">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                    </div>
+
+
+                    <!--TERCERA COLUMNA -->
+                    <div id="inputfechas" class="col-md-4">
+                        <legend>Fechas</legend>
+
+                        <label>Fecha Solicitud</label>
+                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    </div>
+
+                    <!--COLUMNA COMPLETA-->
+                    <div id="causa" class="col-md-12">
+                        <label>Causa Raíz</label>
+                        <textarea class="form-control">  </textarea>
+                    </div>
+
+                    <button type="button" class="btncat  btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat  btn btn-dark">Guardar</button>
+
+                </div>
+
+                <!--SECCION MODIFICAR APROBACIONES-->
+                <div id="formModAccion">
+                    <legend>Modificación de Aprobaciones </legend>
+
+                    <!--PRIMERA COLUMNA -->
+                    <div class="col-md-12">
+                        <legend>Información Acciones</legend>
+
+                        <label>Código Acción</label>
+                        <input type="text" class="form-control" id="txtIdAccion" required>
                     </div>
                     <div class="col-md-4">
-                        <input type="text" class="form-control" id="txtBusqusers" required>
+
+                        <legend>Información Acciones</legend>
+
+                        <label>Código Ticket</label>
+                        <input type="text" class="form-control" id="txtIdtick" required>
+
+                        <label>Código Empresa</label>
+                        <select class="form-control" id="slectidEmp">
+                            <option selected disabled>Empresa</option>
+                            <option value="0">IISA</option>
+                            <option value="1">AGTR</option>
+                            <option value="2">GTI</option>
+                        </select>
                     </div>
-                    <div class="col-xs-1">
-                        <button type="button" id="btnBuscar" class="btn btn-dark">Buscar</button>
+
+                    <!--SEGUNDA COLUMNA -->
+                    <div class="col-md-4">
+                        <legend>Tipos</legend>
+
+                        <label>Código Tipo Acción</label>
+                        <select class="form-control" id="slectipres">
+                            <option selected disabled>Empresa</option>
+                            <option value="0">IISA</option>
+                            <option value="1">AGTR</option>
+                            <option value="2">GTI</option>
+                        </select>
+
+                        <label>Usuario Acción</label>
+                        <select class="form-control" id="slectUsercr">
+                            <option selected disabled>Roles</option>
+                            <option value="0">Administrador</option>
+                            <option value="1">Usuario</option>
+                            <option value="2">Tecnico</option>
+                        </select>
+
+                    </div>
+
+
+                    <!--TERCERA COLUMNA -->
+                    <div id="inputfechas" class="col-md-4">
+                        <legend>Fechas</legend>
+
+                        <label>Fecha Solicitud</label>
+                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+                    </div>
+
+                    <!--COLUMNA COMPLETA-->
+                    <div id="causa" class="col-md-12">
+                        <label>Causa Raíz</label>
+                        <textarea class="form-control">  </textarea>
+                    </div>
+
+                    <button type="button" class="btncat  btn btn-dark">Limpiar</button>
+                    <button type="button" class="btncat  btn btn-dark">Guardar</button>
+
+                </div>
+
+                <!--SECCION ELIMINAR APROBACIONES-->
+                <div id="formElimaccion">
+                    <div class="catal col-md-6">
+                        <legend>Catálogo Eliminar Acción</legend>
+
+                        <label>Código Aprobación</label>
+                        <input type="text" class="form-control" id="txtelimacc" required>
+
+                        <button type="button" class="btncat btn btn-dark">Limpiar</button>
+                        <button type="button" class="btncat btn btn-dark">Guardar</button>
                     </div>
                 </div>
 
-                <!--GRID-VIEW // Table -->
-                <table id="GridAcc" class="table table-dark">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!--SECCION CONSULTAR APROBACIONES-->
+                <!--SE CONSULTAN LOS REGISTROS USUARIO PERSONA-->
+                <div id="formConsulaccio">
+                    <legend>Consultar Aprobaciones </legend>
+
+                    <!--BUSCADOR -->
+                    <div id="Busqacc">
+                        <div class="col-xs-1">
+                            <label id="labCambio">Id_Usuario</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="txtBusqusers" required>
+                        </div>
+                        <div class="col-xs-1">
+                            <button type="button" id="btnBuscar" class="btn btn-dark">Buscar</button>
+                        </div>
+                    </div>
+
+                    <!--GRID-VIEW // Table -->
+                    <table id="GridAcc" class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
     </fieldset>
 </form>
 
