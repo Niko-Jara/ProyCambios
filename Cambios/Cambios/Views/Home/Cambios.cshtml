@@ -3,21 +3,24 @@
 }
 
 <!--MENU PAR2-->
-<script>
-    document.getElementById('menu_login').style.display = "none";
-</script>
+    <script>
+            document.getElementById('menu_login').style.display = "none";
+            document.getElementById('menu_sec').style.display = "none";
+    </script>
 
 
 <form class="container body-content" id="formModific">
     <fieldset>
         <!--SECCION MENU MOSTRAR SECCIONES-->
         <div id="formPrinmod">
-            <div class="btn-group" role="group">
-                <legend>Modificacion de Cambios</legend>
-                <button type="button" id="btnCrear" class="btn btn-dark" onclick="mostrarSec3()">Crear</button>
-                <button type="button" id="btnMod" class="btn btn-dark" onclick="mostrarSec1()">Modificar</button>
-                <button type="button" id="btnElim" class="btn btn-dark" onclick="mostrarSec2()">Eliminar</button>
-                <button type="button" id="btnConsul" class="btn btn-dark" onclick="mostrarSec4()">Consultar</button>
+            <div class="btn-group col-md-12" role="group" >
+                <legend>Pantalla de Cambios</legend>
+                <div style="float:right; ">
+                    <button type="button" @*id="btnCrear"*@ class="btn btn-dark" onclick="mostrarSec3()"><img style="width:50px; height:50px;" src="~/img/add.png" /></button>
+                    <button type="button" @*id="btnMod"*@ class="btn btn-dark" onclick="mostrarSec1()"><img style="width:50px; height:50px;" src="~/img/edita.png" /></button>
+                    <button type="button" @*id="btnElim"*@ class="btn btn-dark" onclick="mostrarSec2()"><img style="width:50px; height:50px;" src="~/img/elim.png" /></button>
+                    <button type="button" @*id="btnConsul"*@ class="btn btn-dark" onclick="mostrarSec4()"><img style="width:50px; height:50px;" src="~/img/bus.png" /></button>
+                </div>
             </div>
                 <!--SECCION MOSTRAR SECCION DE MODIFICACION -->
                 <div id="formCrear">
@@ -27,10 +30,10 @@
                     <div class="col-md-4">
                         <legend>Información General  </legend>
 
-                        <label>ID_Ticket</label>
+                        <label>Código Ticket</label>
                         <input type="text" class="form-control" id="txtIdtick" required>
 
-                        <label>ID_Empresa</label>
+                        <label>Código Empresa</label>
                         <select class="form-control" id="slectidEmpresa">
                             <option selected disabled>Usuario Creador</option>
                             <option value="0">Daniel Jacamo</option>
@@ -38,9 +41,9 @@
                             <option value="2">Nikool Jara</option>
                         </select>
 
-                        <label>Usuario Creacion</label>
+                        <label>Usuario Creador</label>
                         <select class="form-control" id="slectUsarea">
-                            <option selected disabled>Usuario Creador</option>
+                            <option selected disabled>Usuarios</option>
                             <option value="0">Daniel Jacamo</option>
                             <option value="1">Luis vega</option>
                             <option value="2">Nikool Jara</option>
@@ -57,7 +60,7 @@
 
                     <!--SEGUNDA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Categorizacion</legend>
+                        <legend>Categorización</legend>
 
                         <label>Mesa</label>
                         <select class="form-control" id="slectMesa">
@@ -67,7 +70,7 @@
                             <option value="2">Tecnico</option>
                         </select>
 
-                        <label>Categoria</label>
+                        <label>Categoría</label>
                         <select class="form-control" id="slectCategoria">
                             <option selected disabled>Roles</option>
                             <option value="0">Administrador</option>
@@ -104,19 +107,19 @@
                     <div id="inputfechas" class="col-md-4">
                         <legend>Fechas</legend>
 
-                        <label>Fecha_Creacion</label>
+                        <label>Fecha Creación</label>
                         <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                        <label>Fecha_Aplicacion</label>
+                        <label>Fecha Aplicación</label>
                         <input class="form-control" type="date" id="txtFecapli" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                        <label>Fecha_Solucion</label>
+                        <label>Fecha Solución</label>
                         <input class="form-control" type="date" id="txtFecsol" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                        <label>Fecha_Cierre</label>
+                        <label>Fecha Cierre</label>
                         <input class="form-control" type="date" id="txtFeccie" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
                     </div>
 
                     <!--COLUMNA COMPLETA-->
                     <div id="causa" class="col-md-12">
-                        <label>Causa Raiz</label>
+                        <label>Causa Raíz</label>
                         <textarea class="form-control">  </textarea>
                     </div>
 
@@ -127,10 +130,10 @@
 
                 <!--SECCION MOSTRAR SECCION DE MODIFICACION -->
                 <div id="formMod">
-                    <legend>Modificacion de Cambios </legend>
+                    <legend>Modificación de Cambios </legend>
 
                     <div id="titIde">
-                        <label>ID_Ticket</label>
+                        <label>Código Ticket</label>
                         <input type="text" class="form-control" id="txtIdticket" required>
                     </div>
 
@@ -138,7 +141,7 @@
                     <div class="col-md-4">
                         <legend>Información General  </legend>
 
-                        <label>ID_Empresa</label>
+                        <label>Código Empresa</label>
                         <select class="form-control" id="slectidEmpresa">
                             <option selected disabled>Usuario Creador</option>
                             <option value="0">Daniel Jacamo</option>
@@ -146,7 +149,7 @@
                             <option value="2">Nikool Jara</option>
                         </select>
 
-                        <label>Usuario Creacion</label>
+                        <label>Usuario Creación</label>
                         <select class="form-control" id="slectUsarea">
                             <option selected disabled>Usuario Creador</option>
                             <option value="0">Daniel Jacamo</option>
@@ -165,7 +168,7 @@
 
                     <!--SEGUNDA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Categorizacion</legend>
+                        <legend>Categorización</legend>
 
                         <label>Mesa</label>
                         <select class="form-control" id="slectMesa">
@@ -175,7 +178,7 @@
                             <option value="2">Tecnico</option>
                         </select>
 
-                        <label>Categoria</label>
+                        <label>Categoría</label>
                         <select class="form-control" id="slectCategoria">
                             <option selected disabled>Roles</option>
                             <option value="0">Administrador</option>
@@ -213,19 +216,19 @@
                         <!--OJO DEBERIA SER UNA CLASE-->
                         <legend>Fechas</legend>
 
-                        <label>Fecha_Creacion</label>
+                        <label>Fecha Creación</label>
                         <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                        <label>Fecha_Aplicacion</label>
+                        <label>Fecha Aplicación</label>
                         <input class="form-control" type="date" id="txtFecapli" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                        <label>Fecha_Solucion</label>
+                        <label>Fecha Solución</label>
                         <input class="form-control" type="date" id="txtFecsol" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                        <label>Fecha_Cierre</label>
+                        <label>Fecha Cierre</label>
                         <input class="form-control" type="date" id="txtFeccie" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
                     </div>
 
                     <!--COLUMNA COMPLETA--> <!--OJO DEBERIA SER UNA CLASE-->
                     <div id="causa" class="col-md-12">
-                        <label>Causa Raiz</label>
+                        <label>Causa Raíz</label>
                         <textarea class="form-control">  </textarea>
                     </div>
 
@@ -236,10 +239,10 @@
 
                 <!--SECCION MOSTRAR SECCION DE ELIMINACION -->
                 <div id="formDelete" class="catal  col-md-6">
-                    <legend>Eliminacion de Cambios </legend>
+                    <legend>Eliminación de Cambios </legend>
                     <legend>Información General  </legend>
 
-                    <label>ID_Ticket</label>
+                    <label>Código Ticket</label>
                     <input type="text" class="form-control" id="txtIdticket" required>
 
                     <button type="button"  class="btncat  btn btn-dark">Limpiar</button>

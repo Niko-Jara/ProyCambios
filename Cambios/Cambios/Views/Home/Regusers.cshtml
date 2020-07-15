@@ -2,6 +2,11 @@
     ViewBag.Title = "Busqueda";
 }
 
+<script>
+    document.getElementById('menu_login').style.display = "none";
+    document.getElementById('menu_sec').style.display = "none";
+</script>
+
 <!--QUITAR DE ACÁ CSS-->
 <!--MENU PAR2-->
 <script>
@@ -33,7 +38,7 @@
                     <div class="col-md-4">
                         <legend>Datos Personales</legend>
 
-                        <label>Identificacion</label>
+                        <label>Identificación</label>
                         <input type="text" class="form-control" id="txtIdperson" required>
 
                         <label>Nombre</label>
@@ -60,7 +65,7 @@
                         <label>Correo</label>
                         <input type="text" class="form-control" id="txtCorreo" required>
 
-                        <label>Tipo_Correo</label>
+                        <label>Tipo Correo</label>
                         <select class="form-control" id="slectCorreo">
                             <option selected disabled>Estado</option>
                             <option value="0">Personal</option>
@@ -80,16 +85,16 @@
                     <div class="col-md-4">
                         <legend>Empresa Relacionada</legend>
 
-                        <label>Id_Empresa</label>
+                        <label>Código Empresa</label>
                         <input type="text" class="form-control" id="txtId_Empresa" required>
 
                         <label>Nombre Empresa</label>
                         <input type="text" class="form-control" id="txtNombreemp" required>
 
-                        <label>Fecha_Creacion</label>
+                        <label>Fecha Creación</label>
                         <input class="form-control" type="date" id="txtFecemp" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
-                        <label>Estado_Empresa</label>
+                        <label>Estado Empresa</label>
                         <select class="form-control" id="slectEmpresa">
                             <option selected disabled>Estado</option>
                             <option value="0">Desabilitado</option>
@@ -106,7 +111,7 @@
                     <legend>Credenciales de Usuario</legend>
 
                     <div id="colum6" class="col-md-6">
-                        <label>Id_Usuario</label>
+                        <label>Código Usuario</label>
                         <input type="text" class="form-control" id="txtId_Usuario" required>
 
                         <label>Nombre Usuario</label>
@@ -115,10 +120,10 @@
                         <label>Contraseña</label>
                         <input type="text" class="form-control" id="txtPass" required>
 
-                        <label>Fecha_Ingreso</label>
+                        <label>Fecha Ingreso</label>
                         <input class="form-control" type="date" id="txtFecing" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
-                        <label>Estado_Empresa</label>
+                        <label>Estado Empresa</label>
                         <select class="form-control" id="slectEmpresa">
                             <option selected disabled>Estado</option>
                             <option value="0">Desabilitado</option>
@@ -142,9 +147,9 @@
 
                 <!--SECCION DE MODIFICACION-->
                 <div id="modPersona">
-                    <legend>Informacion general</legend>
+                    <legend>Información general</legend>
 
-                    <div id="modcol12" class="col-md-12" >
+                    <div id="modcol12" class="col-md-12">
 
                         <div class="col-md-4">
                             <label>Identificacion</label>
@@ -186,7 +191,7 @@
                         <label>Correo</label>
                         <input type="text" class="form-control" id="txtCorreo" required>
 
-                        <label>Tipo_Correo</label>
+                        <label>Tipo Correo</label>
                         <select class="form-control" id="slectCorreo">
                             <option selected disabled>Estado</option>
                             <option value="0">Personal</option>
@@ -209,10 +214,10 @@
                         <label>Nombre Empresa</label>
                         <input type="text" class="form-control" id="txtNombreemp" required>
 
-                        <label>Fecha_Creacion</label>
+                        <label>Fecha Creación</label>
                         <input class="form-control" type="date" id="txtFecemp" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
-                        <label>Estado_Empresa</label>
+                        <label>Estado Empresa</label>
                         <select class="form-control" id="slectEmpresa">
                             <option selected disabled>Estado</option>
                             <option value="0">Desabilitado</option>
@@ -236,7 +241,7 @@
                         </div>
                     </div>
 
-                    <div id="colmd6"class="col-md-6">
+                    <div id="colmd6" class="col-md-6">
                         <!--QUITAR DE ACÁ-->
                         <legend>Datos de Usuario</legend>
 
@@ -246,10 +251,10 @@
                         <label>Contraseña</label>
                         <input type="text" class="form-control" id="txtPass" required>
 
-                        <label>Fecha_Ingreso</label>
+                        <label>Fecha Ingreso</label>
                         <input class="form-control" type="date" id="txtFecing" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
-                        <label>Estado_Empresa</label>
+                        <label>Estado Empresa</label>
                         <select class="form-control" id="slectEmpresa">
                             <option selected disabled>Estado</option>
                             <option value="0">Desabilitado</option>
@@ -265,7 +270,7 @@
                         </select>
                     </div>
                     <div class="col-md-12">
-                        <button type="button" id="btnregres"  class="btn btn-dark" onclick="modper()">Regresar<<</button>
+                        <button type="button" id="btnregres" class="btn btn-dark" onclick="modper()">Regresar<<</button>
                         <button type="button" id="btnli" class="btn btn-dark"> Limpiar</button>
                         <button type="button" id="btngua" class="btn btn-dark"> Guardar</button>
                     </div>
@@ -276,11 +281,11 @@
                     <legend>Informacion general</legend>
 
                     <!--ELIMINACION DE REGISTROS -->
-                    <div id="colsix"class="col-md-6" >
-                       
+                    <div id="colsix" class="col-md-6">
+
                         <legend>Eliminar datos de Usuarios</legend>
 
-                        <label>Id_Usuario</label>
+                        <label>Código Usuario</label>
                         <input type="text" class="form-control" id="txtIdperson" required>
 
                         <label>Nombre Usuario</label>
@@ -379,27 +384,24 @@
 <!-- MOSTRAR SECCIONES CREAR USUARIO Y CREAR PERSONA-->
 <script>
     //PARTE CREAR USUARIO
-    function mostruser()
-    {
+    function mostruser() {
         document.getElementById('CreaUser').style.display = 'block';
         document.getElementById('crealogin').style.display = 'none';
-        document.getElementById( 'elimiusu').style.display = 'none';
+        document.getElementById('elimiusu').style.display = 'none';
         document.getElementById('formConsulusers').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('modusuario').style.display = 'none';
     }
-    function esconuser()
-    {
+    function esconuser() {
         document.getElementById('crealogin').style.display = 'block';
         document.getElementById('CreaUser').style.display = 'none';
         document.getElementById('elimiusu').style.display = 'none';
         document.getElementById('formConsulusers').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
-        document.getElementById( 'modusuario').style.display = 'none';
+        document.getElementById('modusuario').style.display = 'none';
     }
     //PARTE MODIFICAR
-    function modper()
-    {
+    function modper() {
         document.getElementById('modPersona').style.display = 'block';
         document.getElementById('modusuario').style.display = 'none';
         document.getElementById('crealogin').style.display = 'none';
@@ -407,18 +409,16 @@
         document.getElementById('elimiusu').style.display = 'none';
         document.getElementById('formConsulusers').style.display = 'none';
     }
-    function moduser()
-    {
+    function moduser() {
         document.getElementById('modusuario').style.display = 'block';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('crealogin').style.display = 'none';
         document.getElementById('CreaUser').style.display = 'none';
         document.getElementById('elimiusu').style.display = 'none';
-       document.getElementById('formConsulusers').style.display = 'none';
+        document.getElementById('formConsulusers').style.display = 'none';
     }
     //PARTE ELIMINAR
-    function elimper()
-    {
+    function elimper() {
         document.getElementById('elimiusu').style.display = 'block';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('modusuario').style.display = 'none';
@@ -427,8 +427,7 @@
         document.getElementById('formConsulusers').style.display = 'none';
     }
     //PARTE CONSULTAR
-    function consulper()
-    {
+    function consulper() {
         document.getElementById('formConsulusers').style.display = 'block'
         document.getElementById('elimiusu').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
@@ -437,8 +436,7 @@
         document.getElementById('CreaUser').style.display = 'none';
     }
     //PARTE REGRESAR
-    function nomostrar()
-    {
+    function nomostrar() {
         document.getElementById('elimiusu').style.display = 'none';
         document.getElementById('modPersona').style.display = 'none';
         document.getElementById('modusuario').style.display = 'none';

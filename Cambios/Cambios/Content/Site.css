@@ -30,9 +30,7 @@ body {
 }
 
 
-
 /*PANTALLA DE LOGIN*/
-
 .main-head {
     height: 250px;
     background: #FFF;
@@ -134,6 +132,10 @@ body {
 
 .cortar {
     padding-left: 35px;
+}
+#pant {
+    background-color: #315F6F;
+    color:white;
 }
 
 #formula {

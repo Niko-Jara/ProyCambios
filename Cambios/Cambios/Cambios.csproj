@@ -135,8 +135,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\add.png" />
+    <Content Include="img\adda.png" />
     <Content Include="img\apple.jpg" />
+    <Content Include="img\bus.png" />
     <Content Include="img\business.jpg" />
+    <Content Include="img\edit.png" />
+    <Content Include="img\edita.png" />
+    <Content Include="img\elim.png" />
+    <Content Include="img\este.png" />
+    <Content Include="img\esten.png" />
     <Content Include="img\man.jpg" />
     <Content Include="img\tex.jpg" />
     <Content Include="Scripts\bootstrap.js" />

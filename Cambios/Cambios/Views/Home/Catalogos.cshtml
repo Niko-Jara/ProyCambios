@@ -1,4 +1,14 @@
-﻿<form class="container body-content" id="formModific">
+﻿
+
+@{
+    ViewBag.Title = "Catalogos";
+}
+<script>
+    document.getElementById('menu_login').style.display = "none";
+    document.getElementById('menu_sec').style.display = "none";
+</script>
+
+<form class="container body-content" id="formModific">
     <fieldset>
         <!--SECCION MENU MOSTRAR SECCIONES-->
         <div id="formPricat">
@@ -38,10 +48,10 @@
                         <a class="dropdown-item" onclick="catPrio()">Prioridad</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" onclick="catAccticket()">Accionticket</a>
+                        <a class="dropdown-item" onclick="catAccticket()">Acciónticket</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" onclick="catAproticket()">Aprobacion</a>
+                        <a class="dropdown-item" onclick="catAproticket()">Aprobación</a>
                         <hr class="linea" />
 
                         <a class="dropdown-item" onclick="catRespuesta()">Respuesta</a>
@@ -79,10 +89,10 @@
                         <a class="dropdown-item" onclick="catmodprior()">Prioridad</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" onclick="catmodaccticket()">Accionticket</a>
+                        <a class="dropdown-item" onclick="catmodaccticket()">Acciónticket</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" onclick="catmodapro()">Aprobacion</a>
+                        <a class="dropdown-item" onclick="catmodapro()">Aprobación</a>
                         <hr class="linea" />
 
                         <a class="dropdown-item" onclick="catmodresp()">Respuesta</a>
@@ -120,10 +130,10 @@
                         <a class="dropdown-item" onclick="catelimprio()">Prioridad</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" onclick="catelimaccion()">Accionticket</a>
+                        <a class="dropdown-item" onclick="catelimaccion()">Acciónticket</a>
                         <hr class="linea" />
 
-                        <a class="dropdown-item" onclick=" catelimapro()">Aprobacion</a>
+                        <a class="dropdown-item" onclick=" catelimapro()">Aprobación</a>
                         <hr class="linea" />
 
                         <a class="dropdown-item" onclick="catelimresp()">Respuesta</a>
@@ -138,12 +148,12 @@
 
             <div id="catCorreo">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Crear de Correo </legend>
+                    <legend>Catálogo Crear de Correo </legend>
 
-                    <label>ID_TipoCorreo</label>
+                    <label>Código TipoCorreo</label>
                     <input type="text" class="form-control" id="txtIdEmpresa" required>
 
-                    <label>Descripcion</label>
+                    <label>Descripción</label>
                     <input type="text" class="form-control" id="txtNomemp" required>
 
                     <label>Estado</label>
@@ -162,7 +172,7 @@
 
             <div id="catEmpresa">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Empresa </legend>
+                    <legend>Catálogo Empresa </legend>
 
                     <label>ID_Empresa</label>
                     <input type="text" class="form-control" id="txtIdEmpresa" required>
@@ -178,7 +188,7 @@
 
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -190,9 +200,9 @@
 
             <div id="catMesa">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Mesa </legend>
+                    <legend>Catálogo Mesa </legend>
 
-                    <label>ID_Mesa</label>
+                    <label>Código Mesa</label>
                     <input type="text" class="form-control" id="txtIdmesa" required>
 
                     <label>Nombre</label>
@@ -206,7 +216,7 @@
 
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -218,12 +228,12 @@
 
             <div id="catCat">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Categoria </legend>
+                    <legend>Catálogo Categoría </legend>
 
-                    <label>ID_Categoria</label>
+                    <label>Código Categoría</label>
                     <input type="text" class="form-control" id="txtIdcat" required>
 
-                    <label>ID_Mesa</label>
+                    <label>Código Mesa</label>
                     <input type="text" class="form-control" id="txtIdmesafk" required>
 
                     <label>Nombre</label>
@@ -236,7 +246,7 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -248,9 +258,9 @@
 
             <div id="catTipo">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Tipo </legend>
+                    <legend>Catálogo Tipo </legend>
 
-                    <label>ID_Tipo</label>
+                    <label>Código Tipo</label>
                     <input type="text" class="form-control" id="txtIdtipo" required>
 
                     <label>Nombre</label>
@@ -263,7 +273,7 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -275,9 +285,9 @@
 
             <div id="catEstado">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Estado</legend>
+                    <legend>Catálogo Estado</legend>
 
-                    <label>ID_Estado</label>
+                    <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtIdestado" required>
 
                     <label>Nombre</label>
@@ -290,7 +300,7 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -302,9 +312,9 @@
 
             <div id="catPrioridad">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Prioridad</legend>
+                    <legend>Catálogo Prioridad</legend>
 
-                    <label>ID_Estado</label>
+                    <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtIdprioridad" required>
 
                     <label>Nombre</label>
@@ -317,7 +327,7 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -329,15 +339,15 @@
 
             <div id="catAccticket">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Accion Ticket</legend>
+                    <legend>Catálogo Acción Ticket</legend>
 
-                    <label>ID_Tipo Accion</label>
+                    <label>Código Tipo Acción</label>
                     <input type="text" class="form-control" id="txtIdtipoacc" required>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtNomtipacc" required>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha_Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <label>Estado</label>
@@ -356,15 +366,15 @@
 
             <div id="catAproticket">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Aprobacion Ticket</legend>
+                    <legend>Catálogo Aprobación Ticket</legend>
 
-                    <label>ID_Tipo Aprobacion</label>
+                    <label>Código Tipo Aprobacion</label>
                     <input type="text" class="form-control" id="txtIdacatprob" required>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtNomcatapro" required>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha_Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <label>Estado</label>
@@ -383,7 +393,7 @@
 
             <div id="catResp">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Respuesta Ticket</legend>
+                    <legend>Catálogo Respuesta Ticket</legend>
 
                     <label>ID_Respuesta</label>
                     <input type="text" class="form-control" id="txtIdacatres" required>
@@ -391,7 +401,7 @@
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtNomcatres" required>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha_Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <label>Estado</label>
@@ -410,9 +420,9 @@
 
             <div id="CatcrearRoles">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Rol</legend>
+                    <legend>Catálogo Rol</legend>
 
-                    <label>ID_Tipo Rol</label>
+                    <label>Código Tipo Rol</label>
                     <input type="text" class="form-control" id="txtIdrol" required>
 
                     <label>Nombre</label>
@@ -435,14 +445,14 @@
             <!--CATALOGO CORREO-->
 
             <div id="catModcorreo">
-                <legend>Catalogo Modificar Correo </legend>
+                <legend>Catálogo Modificar Correo </legend>
                 <div class="catal col-md-6">
-                    <label>ID_TipoCorreo</label>
+                    <label>Código Tipo Correo</label>
                     <input type="text" class="form-control" id="txtmodIdEmpresa" required>
 
-                    <legend>Catalogo Modificar Correo </legend>
+                    <legend>Catálogo Modificar Correo </legend>
 
-                    <label>Descripcion</label>
+                    <label>Descripción</label>
                     <input type="text" class="form-control" id="txtmodNomemp" required>
 
                     <label>Estado</label>
@@ -461,12 +471,12 @@
 
             <div id="catModempresa">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Empresa </legend>
+                    <legend>Catálogo Modificar Empresa </legend>
 
-                    <label>ID_Empresa</label>
+                    <label>Código Empresa</label>
                     <input type="text" class="form-control" id="txtmodIdEmpresa" required>
 
-                    <legend>Catalogo Modificar Empresa </legend>
+                    <legend>Catálogo Modificar Empresa </legend>
 
                     <label>Nombres</label>
                     <input type="text" class="form-control" id="txtmodNomemp" required>
@@ -479,7 +489,7 @@
 
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -491,12 +501,12 @@
 
             <div id="catModmesa">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Mesa </legend>
+                    <legend>Catálogo Modificar Mesa </legend>
 
-                    <label>ID_Mesa</label>
+                    <label>Código Mesa</label>
                     <input type="text" class="form-control" id="txtmodIdmesa" required>
 
-                    <legend>Catalogo Modificar Mesa </legend>
+                    <legend>Catálogo Modificar Mesa </legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNommesa" required>
@@ -509,7 +519,7 @@
 
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -521,14 +531,14 @@
 
             <div id="catModcat">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Categoria </legend>
+                    <legend>Catálogo Modificar Categoría </legend>
 
-                    <label>ID_Categoria</label>
+                    <label>Código Categoría</label>
                     <input type="text" class="form-control" id="txtmodIdcat" required>
 
-                    <legend>Catalogo Modificar Categoria </legend>
+                    <legend>Catálogo Modificar Categoría </legend>
 
-                    <label>ID_Mesa</label>
+                    <label>Código Mesa</label>
                     <input type="text" class="form-control" id="txtmodIdmesafk" required>
 
                     <label>Nombre</label>
@@ -542,7 +552,7 @@
 
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -554,12 +564,12 @@
 
             <div id="catModtipo">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Tipo </legend>
+                    <legend>Catálogo Modificar Tipo </legend>
 
-                    <label>ID_Tipo</label>
+                    <label>Código Tipo</label>
                     <input type="text" class="form-control" id="txtmodIdtipo" required>
 
-                    <legend>Catalogo Modificar Tipo </legend>
+                    <legend>Catálogo Modificar Tipo </legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomtipo" required>
@@ -571,7 +581,7 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -583,12 +593,12 @@
 
             <div id="catModestado">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Estado</legend>
+                    <legend>Catálogo Modificar Estado</legend>
 
                     <label>ID_Estado</label>
                     <input type="text" class="form-control" id="txtmodIdestado" required>
 
-                    <legend>Catalogo Modificar Estado </legend>
+                    <legend>Catálogo Modificar Estado </legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomest" required>
@@ -600,7 +610,7 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -612,12 +622,12 @@
 
             <div id="catModprioridad">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Prioridad</legend>
+                    <legend>Catálogo Modificar Prioridad</legend>
 
-                    <label>ID_Estado</label>
+                    <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtmodIdprioridad" required>
 
-                    <legend>Catalogo Modificar Prioridad </legend>
+                    <legend>Catálogo Modificar Prioridad </legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomprio" required>
@@ -629,7 +639,7 @@
                         <option value="1">Desactivado</option>
                     </select>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -641,17 +651,17 @@
 
             <div id="catModaccticket">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Accion Ticket</legend>
+                    <legend>Catálogo Modificar Acción Ticket</legend>
 
-                    <label>ID_Tipo Accion</label>
+                    <label>Código Tipo Acción</label>
                     <input type="text" class="form-control" id="txtmodIdtipoacc" required>
 
-                    <legend>Catalogo Modificar Accion Ticket </legend>
+                    <legend>Catálogo Modificar Acción Ticket </legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomtipacc" required>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <label>Estado</label>
@@ -670,17 +680,17 @@
 
             <div id="catModAproticket">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Aprobacion Ticket</legend>
+                    <legend>Catálogo Modificar Aprobación Ticket</legend>
 
-                    <label>ID_Tipo Aprobacion</label>
+                    <label>Código Tipo Aprobación</label>
                     <input type="text" class="form-control" id="txtmodIdacatprob" required>
 
-                    <legend>Catalogo Modificar Tipo Aprobacion </legend>
+                    <legend>Catálogo Modificar Tipo Aprobación </legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomcatapro" required>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <label>Estado</label>
@@ -699,17 +709,17 @@
 
             <div id="catModresp">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Modificar Respuesta Ticket</legend>
+                    <legend>Catálogo Modificar Respuesta Ticket</legend>
 
-                    <label>ID_Respuesta</label>
+                    <label>Código Respuesta</label>
                     <input type="text" class="form-control" id="txtmodIdacatres" required>
 
-                    <legend>Catalogo Modificar Respuesta Ticket </legend>
+                    <legend>Catálogo Modificar Respuesta Ticket </legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomcatres" required>
 
-                    <label>Fecha_Creacion</label>
+                    <label>Fecha Creación</label>
                     <input class="form-control" type="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     <label>Estado</label>
@@ -729,11 +739,11 @@
             <div id="CatmodRoles">
                 <div class="catal col-md-6">
 
-                    <legend>Catalogo Rol</legend>
-                    <label>ID_Tipo Rol</label>
+                    <legend>Catálogo Rol</legend>
+                    <label>Código Tipo Rol</label>
                     <input type="text" class="form-control" id="txtIdrol" required>
 
-                    <legend>Catalogo Rol</legend>
+                    <legend>Catálogo Rol</legend>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtNomcatrol" required>
@@ -755,9 +765,9 @@
 
             <div id="catElimcorreo">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Correo </legend>
+                    <legend>Catálogo Eliminar Correo </legend>
 
-                    <label>ID_TipoCorreo</label>
+                    <label>Código Tipo Correo</label>
                     <input type="text" class="form-control" id="txtmodIdEmpresa" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -769,9 +779,9 @@
 
             <div id="catElimempresa">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Empresa </legend>
+                    <legend>Catálogo Eliminar Empresa </legend>
 
-                    <label>ID_Empresa</label>
+                    <label>Código Empresa</label>
                     <input type="text" class="form-control" id="txtmodIdEmpresa" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -783,7 +793,7 @@
 
             <div id="catElimmesa">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Mesa </legend>
+                    <legend>Catálogo Eliminar Mesa </legend>
 
                     <label>ID_Mesa</label>
                     <input type="text" class="form-control" id="txtmodIdmesa" required>
@@ -797,9 +807,9 @@
 
             <div id="catElimcat">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Categoria </legend>
+                    <legend>Catálogo Eliminar Categoría </legend>
 
-                    <label>ID_Categoria</label>
+                    <label>ID_Categoría</label>
                     <input type="text" class="form-control" id="txtmodIdcat" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -811,9 +821,9 @@
 
             <div id="catElimtipo">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Tipo </legend>
+                    <legend>Catálogo Eliminar Tipo </legend>
 
-                    <label>ID_Tipo</label>
+                    <label>Código Tipo</label>
                     <input type="text" class="form-control" id="txtmodIdtipo" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -825,9 +835,9 @@
 
             <div id="catElimestado">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Estado</legend>
+                    <legend>Catálogo Eliminar Estado</legend>
 
-                    <label>ID_Estado</label>
+                    <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtmodIdestado" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -839,9 +849,9 @@
 
             <div id="catElimprioridad">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Prioridad</legend>
+                    <legend>Catálogo Eliminar Prioridad</legend>
 
-                    <label>ID_Estado</label>
+                    <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtmodIdprioridad" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -853,9 +863,9 @@
 
             <div id="catElimaccticket">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Accion Ticket</legend>
+                    <legend>Catálogo Eliminar Acción Ticket</legend>
 
-                    <label>ID_Tipo Accion</label>
+                    <label>Código Tipo Acción</label>
                     <input type="text" class="form-control" id="txtmodIdtipoacc" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -867,9 +877,9 @@
 
             <div id="catElimAproticket">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Aprobacion Ticket</legend>
+                    <legend>Catálogo Eliminar Aprobación Ticket</legend>
 
-                    <label>ID_Tipo Aprobacion</label>
+                    <label>Código Tipo Aprobación</label>
                     <input type="text" class="form-control" id="txtmodIdacatprob" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -881,9 +891,9 @@
 
             <div id="catElimresp">
                 <div class="catal col-md-6">
-                    <legend>Catalogo Eliminar Respuesta Ticket</legend>
+                    <legend>Catálogo Eliminar Respuesta Ticket</legend>
 
-                    <label>ID_Respuesta</label>
+                    <label>Código Respuesta</label>
                     <input type="text" class="form-control" id="txtmodIdacatres" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -894,9 +904,9 @@
             <div id="CatelimRoles">
                 <div class="catal col-md-6">
 
-                    <legend>Catalogo Rol</legend>
+                    <legend>Catálogo Rol</legend>
 
-                    <label>ID_Tipo Rol</label>
+                    <label>Código Tipo Rol</label>
                     <input type="text" class="form-control" id="txtIdrol" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
@@ -924,7 +934,7 @@
         document.getElementById('catAproticket').style.display = 'none';
         document.getElementById('catResp').style.display = 'none';
         document.getElementById('CatcrearRoles').style.display = 'none';
-        
+
 
         //OTRO MODIFICAR POR ACA
         document.getElementById('catModcorreo').style.display = 'none';
@@ -1398,7 +1408,7 @@
         document.getElementById('catElimAproticket').style.display = 'none';
         document.getElementById('catElimresp').style.display = 'none';
         document.getElementById('CatelimRoles').style.display = 'none';
-        
+
     }
     //< !--CATALOGO EMPRESA-- >//
     function catmodempresas() {
@@ -1803,7 +1813,7 @@
     //--< !--PARTE SECCION DE ELIMINAR CATALOGOS-- >//
 
     //< !--CATALOGO ELIMINAR CORREO-- >//
-    function catelimcorreo(){
+    function catelimcorreo() {
         document.getElementById('catElimcorreo').style.display = 'block';
         document.getElementById('catElimempresa').style.display = 'none';
         document.getElementById('catElimmesa').style.display = 'none';
@@ -1884,7 +1894,7 @@
     }
     //< !--CATALOGO ELIMINAR MESA-- >//
     function catelimesa() {
-        document.getElementById('catElimmesa').style.display = 'block'; 
+        document.getElementById('catElimmesa').style.display = 'block';
         document.getElementById('catElimcorreo').style.display = 'none';
         document.getElementById('catElimempresa').style.display = 'none';
         document.getElementById('catElimcat').style.display = 'none';
@@ -1924,7 +1934,7 @@
     }
     //< !--CATALOGO ELIMINAR CATEGORIA-- >//
     function catelicat() {
-        document.getElementById('catElimcat').style.display = 'block'; 
+        document.getElementById('catElimcat').style.display = 'block';
         document.getElementById('catElimcorreo').style.display = 'none';
         document.getElementById('catElimempresa').style.display = 'none';
         document.getElementById('catElimmesa').style.display = 'none';
@@ -1964,7 +1974,7 @@
     }
     //< !--CATALOGO ELIMINAR TIPO-- >//
     function catelimTipo() {
-        document.getElementById('catElimtipo').style.display = 'block'; 
+        document.getElementById('catElimtipo').style.display = 'block';
         document.getElementById('catElimcorreo').style.display = 'none';
         document.getElementById('catElimempresa').style.display = 'none';
         document.getElementById('catElimmesa').style.display = 'none';
@@ -2004,7 +2014,7 @@
     }
     //< !--CATALOGO ELIMINAR ESTADO-- >//
     function catelimestado() {
-        document.getElementById('catElimestado').style.display = 'block'; 
+        document.getElementById('catElimestado').style.display = 'block';
         document.getElementById('catElimcorreo').style.display = 'none';
         document.getElementById('catElimempresa').style.display = 'none';
         document.getElementById('catElimmesa').style.display = 'none';
@@ -2042,9 +2052,9 @@
         document.getElementById('catResp').style.display = 'none';
         document.getElementById('CatcrearRoles').style.display = 'none';
     }
-     //< !--CATALOGO ELIMINAR PRIORIDAD-- >//
+    //< !--CATALOGO ELIMINAR PRIORIDAD-- >//
     function catelimprio() {
-        document.getElementById('catElimprioridad').style.display = 'block'; 
+        document.getElementById('catElimprioridad').style.display = 'block';
         document.getElementById('catElimcorreo').style.display = 'none';
         document.getElementById('catElimempresa').style.display = 'none';
         document.getElementById('catElimmesa').style.display = 'none';
@@ -2091,7 +2101,7 @@
         document.getElementById('catElimcat').style.display = 'none';
         document.getElementById('catElimtipo').style.display = 'none';
         document.getElementById('catElimestado').style.display = 'none';
-        document.getElementById('catElimprioridad').style.display = 'none'; 
+        document.getElementById('catElimprioridad').style.display = 'none';
         document.getElementById('catElimAproticket').style.display = 'none';
         document.getElementById('catElimresp').style.display = 'none';
         document.getElementById('CatelimRoles').style.display = 'none';
@@ -2164,7 +2174,7 @@
     }
     //< !--CATALOGO ELIMINAR RESPUESTA TICKET-- >//
     function catelimresp() {
-        document.getElementById('catElimresp').style.display = 'block'; 
+        document.getElementById('catElimresp').style.display = 'block';
         document.getElementById('catElimcorreo').style.display = 'none';
         document.getElementById('catElimempresa').style.display = 'none';
         document.getElementById('catElimmesa').style.display = 'none';
