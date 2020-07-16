@@ -62,32 +62,23 @@
             msg += " \n Campos vacios";
             ok = false;
         }
-        ///*Usuario--1*/
-        //if (usuario == "nikoj22" && password == "hello" && combo == 0) {
-        //    //window.open("Pantadmin", "Pantadmin", "width=900, height=900");            
-        //    //myWindow.close();
-        //    window.location.href = "https://localhost:44383/Home/Pantadmin";
-        //}
-        //else {
-        //    msg += " \n Error de usuario";
-        //    ok = false;
-        //}
+        /*Usuario--1*/
+        if (usuario == "nikoj22" && password == "hello" && combo == 0) {
+               window.location.href = "https://localhost:44383/Home/Pantadmin";
+        } 
         /*Usuario--2*/
-        if (usuario == "danj" && password == "1234" && combo == 1) {
-            window.location.href = "https://localhost:44383/Home/Pantusuario";
+        else if (usuario == "danj" && password == "1234" && combo == 1) {
+               window.location.href = "https://localhost:44383/Home/Pantusuario";
+        }
+        /*Usuario--3*/
+        else if (usuario == "luisvm" && password == "4321" && combo == 2) {
+               window.location.href = "https://localhost:44383/Home/Panttec";
         }
         else {
             msg += " \n Error de usuario";
             ok = false;
-        }
-        ///*Usuario--3*/
-        //if (usuario == "luisvm" && password == "4321" && combo == 2) {
-        //    window.open("Panttec", "Panttec", "width=900, height=900");
-        //}
-        //else {
-        //    msg += " \n Error de usuario";
-        //    ok = false;
-        //}
+            }
+
         if (ok == false) {
             alert(msg);
             return ok;

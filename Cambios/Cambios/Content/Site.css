@@ -232,23 +232,8 @@ body {
 }
 .groupbtn {
    float:right;
-   border:1px solid red;
 }
-/*#btnMod, #btnElim, #btnCrear, #btnReg, #btnEliminar, #btnConsul {
-    margin-top: 12px;
-    background-color: black;
-    color: white;
-    padding-right: 30px;
-    padding-left: 30px;
-    border:1px solid white;
-}
- #btnMod:hover, #btnElim:hover, #btnCrear:hover, #btnReg:hover, #btnEliminar:hover, #btnConsul:hover {
-    color: white;
-    background-color: #56595A;
-    border: 1px solid #898483;
-    min-width: 130px;
-    box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
- }*/
+
 /*PANTALLA DE MODIFICACIONES*/
 #tito {
     margin: 0px;
@@ -453,20 +438,7 @@ body {
     margin-left: 750px;
 }
 /*SECCION DE CATALOGOS*/
-.btnGroupDrop1{
-    color: white;
-    background-color: black;
-    border: 1px solid #898483;
-    min-width: 130px;
-    box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
-}
-.btnGroupDrop1:hover{
-    color: white;
-    background-color: #56595A;
-    border: 1px solid #898483;
-    min-width: 150px;
-    box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
-}
+
 .dropdown-menu {
     background-color: black;
     border: 1px solid #898483;
@@ -501,6 +473,11 @@ body {
 #catElimresp, #catElimAproticket, #catElimaccticket, #catElimprioridad, #catElimestado, #catElimtipo, #catElimcat, #catElimmesa, #catElimempresa, #catElimcorreo, #CatelimRoles {
     display: none;
 }
+/*CONSULTAS DE CATALOGOS*/
+#catconsulcorreo, #catconsulempresa, #catconsulmesa, #catconsulcat, #catconsultipo, #catconsulestado, #catconsulprioridad, #catconsulaccticket, #catconsulAproticket, #catconsresp, #CateconsRoles{
+    display: none;
+}
+
 /*DISEÑO DE PANTALLAS DE CATALOGOS*/
 .catal {
     margin-left: 300px;
@@ -529,4 +506,12 @@ body {
 /*ACCION*/
 #formConsulaccio, #formElimaccion, #formModAccion, #formCrearAccion {
     display: none;
+}
+/*Pantaadm*/
+.imgen {
+    border-radius: 300px; 
+    width:100px; 
+    height:100px; 
+    float:right; 
+    margin-top:10px;
 }
