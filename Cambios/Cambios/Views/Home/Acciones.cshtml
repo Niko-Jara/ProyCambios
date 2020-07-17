@@ -10,28 +10,28 @@
 </script>
 
 
-<form class="container body-content" id="formModific">
+<form class="formModific container body-content">
     <fieldset>
         <!--SECCION MENU MOSTRAR SECCIONES-->
-        <div id="formAprobaciones">
+        <div id="contform">
 
-            <legend>Acciones</legend>
+            <label class="titles">Pantalla de Acciones</label>
 
             <div class="btn-group col-md-12" role="group">
                 <div class="groupbtn">
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="creaaccion()"><img src="~/img/add.png" /></button>
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="modaccion()"><img src="~/img/edita.png" /></button>
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="elimaccion()"><img src="~/img/elim.png" /></button>
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="consulaccion()"><img src="~/img/bus.png" /></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="creaaccion()"><img src="~/img/add.png" alt="Crear"/></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="modaccion()"><img src="~/img/edita.png" alt="Edita"/></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="elimaccion()"><img src="~/img/elim.png" alt="Eliminar"/></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="consulaccion()"><img src="~/img/bus.png" alt="Consultar"/></button>
                 </div>
             </div>
                 <!--SECCION CREAR ACCIONES-->
                 <div id="formCrearAccion">
-                    <legend>Creación de Acciones </legend>
+                    <label class="titlesprin">Creación de Acciones </label>
 
                     <!--PRIMERA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Información Acciones</legend>
+                        <label class="titlessecund">Información Acciones</label>
 
                         <label>Código Acción</label>
                         <input type="text" class="form-control" id="txtIdAccion" required>
@@ -51,7 +51,7 @@
 
                     <!--SEGUNDA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Tipos</legend>
+                        <label class="titlessecund">Tipos</label>
 
                         <label>Código Tipo Acción</label>
                         <select class="form-control" id="slectipres">
@@ -73,16 +73,16 @@
 
 
                     <!--TERCERA COLUMNA -->
-                    <div id="inputfechas" class="col-md-4">
-                        <legend>Fechas</legend>
+                    <div  class="col-md-4">
+                        <label class="titlessecund">Fechas</label>
 
                         <label>Fecha Solicitud</label>
-                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <input class="form-control" type="date" id="txtFechacrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     </div>
 
                     <!--COLUMNA COMPLETA-->
-                    <div id="causa" class="col-md-12">
+                    <div class="causa col-md-12">
                         <label>Causa Raíz</label>
                         <textarea class="form-control">  </textarea>
                     </div>
@@ -94,24 +94,24 @@
 
                 <!--SECCION MODIFICAR APROBACIONES-->
                 <div id="formModAccion">
-                    <legend>Modificación de Aprobaciones </legend>
+                    <label class="titlesprin">Modificación de Aprobaciones </label>
 
                     <!--PRIMERA COLUMNA -->
                     <div class="col-md-12">
-                        <legend>Información Acciones</legend>
+                        <label class="titlessecund">Información Acciones</label>
 
                         <label>Código Acción</label>
-                        <input type="text" class="form-control" id="txtIdAccion" required>
+                        <input type="text" class="form-control" id="txtmodIdAccion" required>
                     </div>
                     <div class="col-md-4">
 
-                        <legend>Información Acciones</legend>
+                        <label class="titlessecund">Información Acciones</label>
 
                         <label>Código Ticket</label>
-                        <input type="text" class="form-control" id="txtIdtick" required>
+                        <input type="text" class="form-control" id="txtmodIdtick" required>
 
                         <label>Código Empresa</label>
-                        <select class="form-control" id="slectidEmp">
+                        <select class="form-control" id="slectmodidEmp">
                             <option selected disabled>Empresa</option>
                             <option value="0">IISA</option>
                             <option value="1">AGTR</option>
@@ -121,10 +121,10 @@
 
                     <!--SEGUNDA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Tipos</legend>
+                        <label class="titlessecund">Tipos</label>
 
                         <label>Código Tipo Acción</label>
-                        <select class="form-control" id="slectipres">
+                        <select class="form-control" id="slecmodtipres">
                             <option selected disabled>Empresa</option>
                             <option value="0">IISA</option>
                             <option value="1">AGTR</option>
@@ -132,7 +132,7 @@
                         </select>
 
                         <label>Usuario Acción</label>
-                        <select class="form-control" id="slectUsercr">
+                        <select class="form-control" id="slectmodUsercr">
                             <option selected disabled>Roles</option>
                             <option value="0">Administrador</option>
                             <option value="1">Usuario</option>
@@ -143,8 +143,8 @@
 
 
                     <!--TERCERA COLUMNA -->
-                    <div id="inputfechas" class="col-md-4">
-                        <legend>Fechas</legend>
+                    <div class="col-md-4">
+                        <label class="titlessecund">Fechas</label>
 
                         <label>Fecha Solicitud</label>
                         <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
@@ -152,7 +152,7 @@
                     </div>
 
                     <!--COLUMNA COMPLETA-->
-                    <div id="causa" class="col-md-12">
+                    <div class="causa  col-md-12">
                         <label>Causa Raíz</label>
                         <textarea class="form-control">  </textarea>
                     </div>
@@ -165,7 +165,7 @@
                 <!--SECCION ELIMINAR APROBACIONES-->
                 <div id="formElimaccion">
                     <div class="catal col-md-6">
-                        <legend>Catálogo Eliminar Acción</legend>
+                        <label class="titlesprin">Catálogo Eliminar Acción</label>
 
                         <label>Código Aprobación</label>
                         <input type="text" class="form-control" id="txtelimacc" required>
@@ -178,7 +178,7 @@
                 <!--SECCION CONSULTAR APROBACIONES-->
                 <!--SE CONSULTAN LOS REGISTROS USUARIO PERSONA-->
                 <div id="formConsulaccio">
-                    <legend>Consultar Aprobaciones </legend>
+                    <label class="titlesprin">Consultar Aprobaciones </label>
 
                     <!--BUSCADOR -->
                     <div id="Busqacc">
@@ -243,7 +243,7 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+        </div>
     </fieldset>
 </form>
 

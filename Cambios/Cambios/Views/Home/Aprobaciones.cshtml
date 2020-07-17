@@ -10,37 +10,37 @@
 </script>
 
 
-<form class="container body-content" id="formModific">
+<form class="formModific container body-content" >
     <fieldset>
         <!--SECCION MENU MOSTRAR SECCIONES-->
         <div id="formAprobaciones">
 
-            <legend>Aprobaciones</legend>
+            <label class="titles">Pantalla de Aprobaciones</label>
 
             <div class="btn-group col-md-12" role="group">
                 <div class="groupbtn">
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="creaapr()"><img src="~/img/add.png" /></button>
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="modapr()"><img src="~/img/edita.png" /></button>
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="eliminaapr()"><img src="~/img/elim.png" /></button>
-                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="consulapro()"><img src="~/img/bus.png" /></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="creaapr()"><img src="~/img/add.png" alt="Crear"/></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="modapr()"><img src="~/img/edita.png" alt="Editar"/></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="eliminaapr()"><img src="~/img/elim.png" alt="Eliminar"/></button>
+                    <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" onclick="consulapro()"><img src="~/img/bus.png" alt="Buscar"/></button>
                 </div>
             </div>
                 <!--SECCION CREAR APROBACIONES-->
                 <div id="formCrearAprobacion">
-                    <legend>Creación de Aprobaciones </legend>
+                    <label class="titlesprin">Creación de Aprobaciones </label>
 
                     <!--PRIMERA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Información Aprobaciones</legend>
+                        <label class="titlessecund">Información Aprobaciones</label>
 
                         <label>Código Aprobación</label>
-                        <input type="text" class="form-control" id="txtIdAccion" required>
+                        <input type="text" class="form-control" id="txtIdApp" required>
 
                         <label>Código Ticket</label>
-                        <input type="text" class="form-control" id="txtIdtick" required>
+                        <input type="text" class="form-control" id="txtcdtick" required>
 
                         <label>Código Tipo Aprobacion</label>
-                        <select class="form-control" id="slectipaction">
+                        <select class="form-control" id="slectapro">
                             <option selected disabled>Empresa</option>
                             <option value="0">IISA</option>
                             <option value="1">AGTR</option>
@@ -48,7 +48,7 @@
                         </select>
 
                         <label>Código Tipo Respuesta</label>
-                        <select class="form-control" id="slectipres">
+                        <select class="form-control" id="slecres">
                             <option selected disabled>Empresa</option>
                             <option value="0">IISA</option>
                             <option value="1">AGTR</option>
@@ -58,7 +58,7 @@
 
                     <!--SEGUNDA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Involucrados</legend>
+                        <label class="titlessecund">Involucrados</label>
 
                         <label>Usuario Creador</label>
                         <select class="form-control" id="slectUsercr">
@@ -69,7 +69,7 @@
                         </select>
 
                         <label>Usuario Acepta</label>
-                        <select class="form-control" id="slectUsercr">
+                        <select class="form-control" id="slectUseracep">
                             <option selected disabled>Roles</option>
                             <option value="0">Administrador</option>
                             <option value="1">Usuario</option>
@@ -89,19 +89,19 @@
 
 
                     <!--TERCERA COLUMNA -->
-                    <div id="inputfechas" class="col-md-4">
-                        <legend>Fechas</legend>
+                    <div  class="col-md-4">
+                        <label class="titlessecund">Fechas</label>
 
                         <label>Fecha Solicitud</label>
-                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <input class="form-control" type="date" id="txtFecsolic" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                         <label>Fecha Respuesta</label>
-                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <input class="form-control" type="date" id="txtFecresp" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     </div>
 
                     <!--COLUMNA COMPLETA-->
-                    <div id="causa" class="col-md-12">
+                    <div  class="causa col-md-12">
                         <label>Causa Raíz</label>
                         <textarea class="form-control">  </textarea>
                     </div>
@@ -113,18 +113,18 @@
 
                 <!--SECCION MODIFICAR APROBACIONES-->
                 <div id="formModAprobacion">
-                    <legend>Modificación de Aprobaciones </legend>
+                    <label class="titlesprin">Modificación de Aprobaciones </label>
 
                     <!--PRIMERA COLUMNA -->
                     <div class="col-md-12">
-                        <legend>Información Aprobaciones</legend>
+                        <label class="titlessecund">Información Aprobaciones</label>
 
                         <label>Código Aprobación</label>
                         <input type="text" class="form-control" id="txtIdAccion" required>
                     </div>
                     <div class="col-md-4">
 
-                        <legend>Información Aprobaciones</legend>
+                        <label class="titlessecund">Información Aprobaciones</label>
 
                         <label>Código Ticket</label>
                         <input type="text" class="form-control" id="txtIdtick" required>
@@ -148,10 +148,10 @@
 
                     <!--SEGUNDA COLUMNA -->
                     <div class="col-md-4">
-                        <legend>Involucrados</legend>
+                        <label class="titlessecund">Involucrados</label>
 
                         <label>Usuario Creador</label>
-                        <select class="form-control" id="slectUsercr">
+                        <select class="form-control" id="slectUse">
                             <option selected disabled>Roles</option>
                             <option value="0">Administrador</option>
                             <option value="1">Usuario</option>
@@ -159,7 +159,7 @@
                         </select>
 
                         <label>Usuario Acepta</label>
-                        <select class="form-control" id="slectUsercr">
+                        <select class="form-control" id="slectUsacep">
                             <option selected disabled>Roles</option>
                             <option value="0">Administrador</option>
                             <option value="1">Usuario</option>
@@ -168,7 +168,7 @@
 
 
                         <label>Código Empresa</label>
-                        <select class="form-control" id="slectidEmp">
+                        <select class="form-control" id="sleccrdEmp">
                             <option selected disabled>Empresa</option>
                             <option value="0">IISA</option>
                             <option value="1">AGTR</option>
@@ -179,19 +179,19 @@
 
 
                     <!--TERCERA COLUMNA -->
-                    <div id="inputfechas" class="col-md-4">
-                        <legend>Fechas</legend>
+                    <div  class="col-md-4">
+                        <label class="titlessecund">Fechas</label>
 
                         <label>Fecha Solicitud</label>
-                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <input class="form-control" type="date" id="txtFesoli" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                         <label>Fecha Respuesta</label>
-                        <input class="form-control" type="date" id="txtFeccrea" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <input class="form-control" type="date" id="txtFeres" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
 
                     </div>
 
                     <!--COLUMNA COMPLETA-->
-                    <div id="causa" class="col-md-12">
+                    <div  class="causa col-md-12">
                         <label>Causa Raíz</label>
                         <textarea class="form-control">  </textarea>
                     </div>
@@ -204,7 +204,7 @@
                 <!--SECCION ELIMINAR APROBACIONES-->
                 <div id="formElimapro">
                     <div class="catal col-md-6">
-                        <legend>Catálogo Eliminar Aprobación</legend>
+                        <label class="titlesprin">Catálogo Eliminar Aprobación</label>
 
                         <label>Código Aprobación</label>
                         <input type="text" class="form-control" id="txtelimapr" required>
@@ -217,7 +217,7 @@
                 <!--SECCION CONSULTAR APROBACIONES-->
                 <!--SE CONSULTAN LOS REGISTROS USUARIO PERSONA-->
                 <div id="formConsulapro">
-                    <legend>Consultar Aprobaciones </legend>
+                    <label class="titlesprin">Consultar Aprobaciones </label>
 
                     <!--BUSCADOR -->
                     <div id="Busqapro">

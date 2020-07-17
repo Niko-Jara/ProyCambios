@@ -173,7 +173,7 @@ fieldset {
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
-legend {
+label {
   border: 0;
   padding: 0;
 }
@@ -2592,7 +2592,7 @@ fieldset {
   margin: 0;
   border: 0;
 }
-legend {
+label {
   display: block;
   width: 100%;
   padding: 0;

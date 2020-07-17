@@ -8,11 +8,11 @@
     document.getElementById('menu_sec').style.display = "none";
 </script>
 
-<form class="container body-content" id="formModific">
+<form class="formModific container body-content" >
     <fieldset>
         <!--SECCION MENU MOSTRAR SECCIONES-->
         <div id="formPricat">
-            <legend>Catálogos</legend>
+            <label class="titles">Pantalla de Catálogos</label>
 
             <!--MENU BOTONES-->
             <!--BOTONERA CREAR CATALOGOS-->
@@ -21,9 +21,9 @@
                 <div class="groupbtn">
                     <div class="btn-group" role="group">
                         <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="~/img/add.png" />
+                            <img src="~/img/add.png " alt="Agregar" />
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <div class="dropdown-menu" >
 
                             <a class="dropdown-item" onclick="catcorreos()">Correo</a>
                             <hr class="linea" />
@@ -63,9 +63,9 @@
                     <!--BOTONERA MODIFICAR CATALOGOS-->
                     <div class="btn-group" role="group">
                         <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="~/img/edita.png" />
+                            <img src="~/img/edita.png" alt="Editar"/>
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <div class="dropdown-menu" >
                             <a class="dropdown-item" onclick="catmodcorreos()">Correo</a>
                             <hr class="linea" />
 
@@ -103,14 +103,14 @@
                     <!--BOTONERA ELIMINAR CATALOGOS-->
                     <div class="btn-group" role="group">
                         <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="~/img/elim.png" />
+                            <img src="~/img/elim.png" alt="Eliminar"/>
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <div class="dropdown-menu" >
 
                             <a class="dropdown-item" onclick="catelimcorreo()">Correo</a>
                             <hr class="linea" />
 
-                            <a class="dropdown-item" onclick="catelimRol()">Rol</a>
+                            <a class="dropdown-item" onclick="cateliminarRol()">Rol</a>
                             <hr class="linea" />
 
                             <a class="dropdown-item" onclick="catelimemp()">Empresa</a>
@@ -144,10 +144,10 @@
                     <!--BOTONERA BUSCAR CATALOGOS-->
                     <div class="btn-group" role="group">
                         <button type="button" class="btnmenu btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="~/img/bus.png" />
+                            <img src="~/img/bus.png" alt="Consultar"/>
                         </button>
 
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <div class="dropdown-menu" >
 
                             <a class="dropdown-item" onclick="catbuscorreo()">Correo</a>
                             <hr class="linea" />
@@ -192,13 +192,13 @@
 
             <div id="catCorreo">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Crear de Correo </legend>
+                    <label class="titlessecund">Catálogo Crear de Correo </label>
 
                     <label>Código TipoCorreo</label>
-                    <input type="text" class="form-control" id="txtIdEmpresa" required>
+                    <input type="text" class="form-control" id="txtIdCorreo" required>
 
                     <label>Descripción</label>
-                    <input type="text" class="form-control" id="txtNomemp" required>
+                    <input type="text" class="form-control" id="txtNomcorreo" required>
 
                     <label>Estado</label>
                     <select class="form-control" id="slecEscorreo">
@@ -216,7 +216,7 @@
 
             <div id="catEmpresa">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Empresa </legend>
+                    <label class="titlessecund">Catálogo Empresa </label>
 
                     <label>ID_Empresa</label>
                     <input type="text" class="form-control" id="txtIdEmpresa" required>
@@ -244,7 +244,7 @@
 
             <div id="catMesa">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Mesa </legend>
+                    <label class="titlessecund">Catálogo Mesa </label>
 
                     <label>Código Mesa</label>
                     <input type="text" class="form-control" id="txtIdmesa" required>
@@ -272,7 +272,7 @@
 
             <div id="catCat">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Categoría </legend>
+                    <label class="titlessecund">Catálogo Categoría </label>
 
                     <label>Código Categoría</label>
                     <input type="text" class="form-control" id="txtIdcat" required>
@@ -302,7 +302,7 @@
 
             <div id="catTipo">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Tipo </legend>
+                    <label class="titlessecund" >Catálogo Tipo </label>
 
                     <label>Código Tipo</label>
                     <input type="text" class="form-control" id="txtIdtipo" required>
@@ -329,7 +329,7 @@
 
             <div id="catEstado">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Estado</legend>
+                    <label class="titlessecund">Catálogo Estado</label>
 
                     <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtIdestado" required>
@@ -356,7 +356,7 @@
 
             <div id="catPrioridad">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Prioridad</legend>
+                    <label class="titlessecund">Catálogo Prioridad</label>
 
                     <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtIdprioridad" required>
@@ -383,7 +383,7 @@
 
             <div id="catAccticket">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Acción Ticket</legend>
+                    <label class="titlessecund">Catálogo Acción Ticket</label>
 
                     <label>Código Tipo Acción</label>
                     <input type="text" class="form-control" id="txtIdtipoacc" required>
@@ -410,7 +410,7 @@
 
             <div id="catAproticket">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Aprobación Ticket</legend>
+                    <label class="titlessecund">Catálogo Aprobación Ticket</label>
 
                     <label>Código Tipo Aprobacion</label>
                     <input type="text" class="form-control" id="txtIdacatprob" required>
@@ -437,7 +437,7 @@
 
             <div id="catResp">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Respuesta Ticket</legend>
+                    <label class="titlessecund">Catálogo Respuesta Ticket</label>
 
                     <label>ID_Respuesta</label>
                     <input type="text" class="form-control" id="txtIdacatres" required>
@@ -464,7 +464,7 @@
 
             <div id="CatcrearRoles">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Rol</legend>
+                    <label class="titlessecund">Catálogo Rol</label>
 
                     <label>Código Tipo Rol</label>
                     <input type="text" class="form-control" id="txtIdrol" required>
@@ -489,15 +489,15 @@
             <!--CATALOGO CORREO-->
 
             <div id="catModcorreo">
-                <legend>Catálogo Modificar Correo </legend>
                 <div class="catal col-md-6">
+                    <label class="titlessecund">Catálogo Modificar Correo </label>
                     <label>Código Tipo Correo</label>
-                    <input type="text" class="form-control" id="txtmodIdEmpresa" required>
+                    <input type="text" class="form-control" id="txtmodIdCorreo" required>
 
-                    <legend>Datos Correo </legend>
+                    <label class="titlessecund">Datos Correo </label>
 
                     <label>Descripción</label>
-                    <input type="text" class="form-control" id="txtmodNomemp" required>
+                    <input type="text" class="form-control" id="txtmodNomcorreo" required>
 
                     <label>Estado</label>
                     <select class="form-control" id="slecmodEscorreo">
@@ -515,12 +515,12 @@
 
             <div id="catModempresa">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Empresa </legend>
+                    <label class="titlessecund">Catálogo Modificar Empresa </label>
 
                     <label>Código Empresa</label>
                     <input type="text" class="form-control" id="txtmodIdEmpresa" required>
 
-                    <legend>Datos Empresa </legend>
+                    <label class="titlessecund">Datos Empresa </label>
 
                     <label>Nombres</label>
                     <input type="text" class="form-control" id="txtmodNomemp" required>
@@ -545,12 +545,12 @@
 
             <div id="catModmesa">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Mesa </legend>
+                    <label class="titlessecund">Catálogo Modificar Mesa </label>
 
                     <label>Código Mesa</label>
                     <input type="text" class="form-control" id="txtmodIdmesa" required>
 
-                    <legend>Datos Mesa </legend>
+                    <label class="titlessecund">Datos Mesa </label>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNommesa" required>
@@ -575,12 +575,12 @@
 
             <div id="catModcat">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Categoría </legend>
+                    <label class="titlessecund">Catálogo Modificar Categoría </label>
 
                     <label>Código Categoría</label>
                     <input type="text" class="form-control" id="txtmodIdcat" required>
 
-                    <legend>Datos Categoría </legend>
+                    <label class="titlessecund">Datos Categoría </label>
 
                     <label>Código Mesa</label>
                     <input type="text" class="form-control" id="txtmodIdmesafk" required>
@@ -608,12 +608,12 @@
 
             <div id="catModtipo">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Tipo </legend>
+                    <label class="titlessecund">Catálogo Modificar Tipo </label>
 
                     <label>Código Tipo</label>
                     <input type="text" class="form-control" id="txtmodIdtipo" required>
 
-                    <legend>Datos Tipo </legend>
+                    <label class="titlessecund">Datos Tipo </label>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomtipo" required>
@@ -637,12 +637,12 @@
 
             <div id="catModestado">
                 <div class="catal col-md-6">
-                    <legend>Datos Catálogo Estado</legend>
+                    <label class="titlessecund">Catálogo Estado</label>
 
                     <label>ID_Estado</label>
                     <input type="text" class="form-control" id="txtmodIdestado" required>
 
-                    <legend>Catálogo Estado </legend>
+                    <label class="titlessecund">Datos Catálogo Estado </label>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomest" required>
@@ -666,12 +666,12 @@
 
             <div id="catModprioridad">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Prioridad</legend>
+                    <label class="titlessecund">Catálogo Modificar Prioridad</label>
 
                     <label>Código Estado</label>
                     <input type="text" class="form-control" id="txtmodIdprioridad" required>
 
-                    <legend>Datos Prioridad </legend>
+                    <label class="titlessecund">Datos Prioridad </label>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomprio" required>
@@ -695,12 +695,12 @@
 
             <div id="catModaccticket">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Acción Ticket</legend>
+                    <label class="titlessecund">Catálogo Modificar Acción Ticket</label>
 
                     <label>Código Tipo Acción</label>
                     <input type="text" class="form-control" id="txtmodIdtipoacc" required>
 
-                    <legend>Datos Acción Ticket </legend>
+                    <label class="titlessecund">Datos Acción Ticket </label>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomtipacc" required>
@@ -724,12 +724,12 @@
 
             <div id="catModAproticket">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Aprobación Ticket</legend>
+                    <label class="titlessecund">Catálogo Modificar Aprobación Ticket</label>
 
                     <label>Código Tipo Aprobación</label>
                     <input type="text" class="form-control" id="txtmodIdacatprob" required>
 
-                    <legend>Datos  Tipo Aprobación </legend>
+                    <label class="titlessecund">Datos  Tipo Aprobación </label>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomcatapro" required>
@@ -753,12 +753,12 @@
 
             <div id="catModresp">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Modificar Respuesta Ticket</legend>
+                    <label>Catálogo Modificar Respuesta Ticket</label>
 
-                    <label>Código Respuesta</label>
+                    <label class="titlessecund">Código Respuesta</label>
                     <input type="text" class="form-control" id="txtmodIdacatres" required>
 
-                    <legend>Datos Respuesta Ticket </legend>
+                    <label class="titlessecund">Datos Respuesta Ticket </label>
 
                     <label>Nombre</label>
                     <input type="text" class="form-control" id="txtmodNomcatres" required>
@@ -783,17 +783,17 @@
             <div id="CatmodRoles">
                 <div class="catal col-md-6">
 
-                    <legend>Modificar Catálogo Rol</legend>
+                    <label class="titlessecund">Modificar Catálogo Rol</label>
                     <label>Código Tipo Rol</label>
-                    <input type="text" class="form-control" id="txtIdrol" required>
+                    <input type="text" class="form-control" id="txtmodIdrol" required>
 
-                    <legend>Datos Rol</legend>
+                    <label class="titlessecund">Datos Rol</label>
 
                     <label>Nombre</label>
-                    <input type="text" class="form-control" id="txtNomcatrol" required>
+                    <input type="text" class="form-control" id="txtmodNomcatrol" required>
 
                     <label>Estado</label>
-                    <select class="form-control" id="slecatrol">
+                    <select class="form-control" id="slemodcatrol">
                         <option selected disabled>Estado</option>
                         <option value="0">Activo</option>
                         <option value="1">Desactivado</option>
@@ -809,10 +809,10 @@
 
             <div id="catElimcorreo">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Correo </legend>
+                    <label class="titlessecund">Catálogo Eliminar Correo </label>
 
                     <label>Código Tipo Correo</label>
-                    <input type="text" class="form-control" id="txtmodIdEmpresa" required>
+                    <input type="text" class="form-control" id="txtelimIdCorreo" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -823,10 +823,10 @@
 
             <div id="catElimempresa">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Empresa </legend>
+                    <label class="titlessecund">Catálogo Eliminar Empresa </label>
 
                     <label>Código Empresa</label>
-                    <input type="text" class="form-control" id="txtmodIdEmpresa" required>
+                    <input type="text" class="form-control" id="txtelimIdEmpresa" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -837,10 +837,10 @@
 
             <div id="catElimmesa">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Mesa </legend>
+                    <label class="titlessecund">Catálogo Eliminar Mesa </label>
 
                     <label>ID_Mesa</label>
-                    <input type="text" class="form-control" id="txtmodIdmesa" required>
+                    <input type="text" class="form-control" id="txtelimIdmesa" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -851,10 +851,10 @@
 
             <div id="catElimcat">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Categoría </legend>
+                    <label class="titlessecund">Catálogo Eliminar Categoría </label>
 
                     <label>ID_Categoría</label>
-                    <input type="text" class="form-control" id="txtmodIdcat" required>
+                    <input type="text" class="form-control" id="txtelimIdcat" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -865,10 +865,10 @@
 
             <div id="catElimtipo">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Tipo </legend>
+                    <label class="titlessecund">Catálogo Eliminar Tipo </label>
 
                     <label>Código Tipo</label>
-                    <input type="text" class="form-control" id="txtmodIdtipo" required>
+                    <input type="text" class="form-control" id="txtelimIdtipo" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -879,10 +879,10 @@
 
             <div id="catElimestado">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Estado</legend>
+                    <label class="titlessecund">Catálogo Eliminar Estado</label>
 
                     <label>Código Estado</label>
-                    <input type="text" class="form-control" id="txtmodIdestado" required>
+                    <input type="text" class="form-control" id="txtelimIdestado" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -893,10 +893,10 @@
 
             <div id="catElimprioridad">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Prioridad</legend>
+                    <label class="titlessecund">Catálogo Eliminar Prioridad</label>
 
                     <label>Código Estado</label>
-                    <input type="text" class="form-control" id="txtmodIdprioridad" required>
+                    <input type="text" class="form-control" id="txtelimIdprioridad" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -907,10 +907,10 @@
 
             <div id="catElimaccticket">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Acción Ticket</legend>
+                    <label class="titlessecund">Catálogo Eliminar Acción Ticket</label>
 
                     <label>Código Tipo Acción</label>
-                    <input type="text" class="form-control" id="txtmodIdtipoacc" required>
+                    <input type="text" class="form-control" id="txtelimIdtipoacc" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -921,10 +921,10 @@
 
             <div id="catElimAproticket">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Aprobación Ticket</legend>
+                    <label class="titlessecund">Catálogo Eliminar Aprobación Ticket</label>
 
                     <label>Código Tipo Aprobación</label>
-                    <input type="text" class="form-control" id="txtmodIdacatprob" required>
+                    <input type="text" class="form-control" id="txtelimIdacatprob" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -935,10 +935,10 @@
 
             <div id="catElimresp">
                 <div class="catal col-md-6">
-                    <legend>Catálogo Eliminar Respuesta Ticket</legend>
+                    <label class="titlessecund">Catálogo Eliminar Respuesta Ticket</label>
 
                     <label>Código Respuesta</label>
-                    <input type="text" class="form-control" id="txtmodIdacatres" required>
+                    <input type="text" class="form-control" id="txtelimIdacatres" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -948,10 +948,10 @@
             <div id="CatelimRoles">
                 <div class="catal col-md-6">
 
-                    <legend>Catálogo Rol</legend>
+                    <label class="titlessecund">Catálogo Eliminar  Rol</label>
 
                     <label>Código Tipo Rol</label>
-                    <input type="text" class="form-control" id="txtIdrol" required>
+                    <input type="text" class="form-control" id="txtelimIdrol" required>
 
                     <button type="button" class="btncat btn btn-dark">Limpiar</button>
                     <button type="button" class="btncat btn btn-dark">Guardar</button>
@@ -962,158 +962,757 @@
             <!--CONSULTAR CATALOGOS-->
             <!--CATALOGO CORREO-->
 
-            <div id="catconsulcorreo" >
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Correo </legend>
+            <div id="catconsulcorreo">
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Correo </label>
 
-                    <label>Código Tipo Correo</label>
-                    <input type="text" class="form-control" id="txtconsIdEmpresa" required>
+                    <label class="col-xs-2">Código Tipo Correo</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsCorreo" required>
+                    </div>
+                    <div class="col-xs-1">
+                        <button type="button"  class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <!--CATALOGO EMPRESA-->
 
             <div id="catconsulempresa">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Empresa </legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Empresa </label>
 
-                    <label>Código Empresa</label>
-                    <input type="text" class="form-control" id="txtconsIdEmpresa" required>
+                    <label class="col-xs-2">Código Empresa</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdEmpresa" required>
+                    </div>
+                    <div class="col-xs-1">
+                        <button type="button"  class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <!--CATALOGO MESA-->
 
             <div id="catconsulmesa">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Mesa </legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Mesa </label>
 
-                    <label>ID_Mesa</label>
-                    <input type="text" class="form-control" id="txtconsIdmesa" required>
+                    <label class="col-xs-2">Código Mesa</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdmesa" required>
+                    </div>
+                    <div class="col-xs-1">
+                        <button type="button"  class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <!--CATALOGO CATEGORIA-->
 
             <div id="catconsulcat">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Categoría </legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Categoría </label>
 
-                    <label>ID_Categoría</label>
-                    <input type="text" class="form-control" id="txtconsIdcat" required>
+                    <label class="col-xs-2">ID_Categoría</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdcat" required>
+                    </div>
+
+                    <div class="col-xs-1">
+                        <button type="button" class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
+
                 </div>
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <!--CATALOGO TIPO-->
 
             <div id="catconsultipo">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Tipo </legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Tipo </label>
 
-                    <label>Código Tipo</label>
-                    <input type="text" class="form-control" id="txtconsIdtipo" required>
+                    <label class="col-xs-2">Código Tipo</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdtipo" required>
+                    </div>
+
+                    <div class="col-xs-1">
+                        <button type="button"  class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <!--CATALOGO  ESTADO-->
 
             <div id="catconsulestado">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Estado</legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Estado</label>
 
-                    <label>Código Estado</label>
-                    <input type="text" class="form-control" id="txtconsIdestado" required>
+                    <label class="col-xs-2">Código Estado</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdestado" required>
+                    </div>
+                    <div class="col-xs-1">
+                        <button type="button"  class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <!--CATALOGO  PRIORIDAD-->
 
             <div id="catconsulprioridad">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Prioridad</legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Prioridad</label>
 
-                    <label>Código Estado</label>
-                    <input type="text" class="form-control" id="txtconsIdprioridad" required>
+                    <label class="col-xs-2">Código Estado</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdprioridad" required>
+                    </div>
+
+                    <div class="col-xs-1">
+                        <button type="button"  class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <!--CATALOGO  ACCION  TICKET-->
 
             <div id="catconsulaccticket">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Acción Ticket</legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Acción Ticket</label>
 
-                    <label>Código Tipo Acción</label>
-                    <input type="text" class="form-control" id="txtconsIdtipoacc" required>
+                    <label class="col-xs-2">Código Tipo Acción</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdtipoacc" required>
+                    </div>
+
+                    <div class="col-xs-1">
+                        <button type="button" class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!--CATALOGO  TIPO APROBACION-->
 
             <div id="catconsulAproticket">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Aprobación Ticket</legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Aprobación Ticket</label>
 
-                    <label>Código Tipo Aprobación</label>
-                    <input type="text" class="form-control" id="txtconsIdacatprob" required>
+                    <label class="col-xs-2">Código Tipo Aprobación</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdacatprob" required>
+                    </div>
+
+                    <div class="col-xs-1">
+                        <button type="button" class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!--CATALOGO  RESPUESTA DE APROBACION-->
 
             <div id="catconsresp">
-                <div class="catal col-md-6">
-                    <legend>Catálogo Consultar Respuesta Ticket</legend>
+                <div>
+                    <label class="titlessecund">Catálogo Consultar Respuesta Ticket</label>
 
-                    <label>Código Respuesta</label>
-                    <input type="text" class="form-control" id="txtconsIdacatres" required>
+                    <label class="col-xs-2">Código Respuesta</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdacatres" required>
+                    </div>
+
+                    <div class="col-xs-1">
+                        <button type="button" class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
             <!--CATALOGO ROLES-->
             <div id="CateconsRoles">
-                <div class="catal col-md-6">
+                <div>
 
-                    <legend>Catálogo Consultar Rol</legend>
+                    <label class="titlessecund">Catálogo Consultar Rol</label>
 
-                    <label>Código Tipo Rol</label>
-                    <input type="text" class="form-control" id="txtconsIdrol" required>
+                    <label class="col-xs-2">Código Tipo Rol</label>
 
-                    <button type="button" class="btncat btn btn-dark">Limpiar</button>
-                    <button type="button" class="btncat btn btn-dark">Guardar</button>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="txtconsIdrol" required>
+                    </div>
+
+                    <div class="col-xs-1">
+                        <button type="button" class="btnBuscar btn btn-dark">Buscar</button>
+                    </div>
                 </div>
+
+                <!--GRID-VIEW // Table -->
+                <table  class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
         </div>
-    </fieldset>
+</fieldset>
 </form>
 
 <!--MOSTRAR SECCIONES DE CATALOGOS-->
@@ -2829,7 +3428,7 @@
         document.getElementById('CateconsRoles').style.display = 'none';
     }
     //< !--CATALOGO ELIMINAR ROL-->
-    function catelimRol() {
+    function cateliminarRol() {
         document.getElementById('catCorreo').style.display = 'none';
         document.getElementById('catEmpresa').style.display = 'none';
         document.getElementById('catMesa').style.display = 'none';
@@ -2868,7 +3467,7 @@
         document.getElementById('catElimAproticket').style.display = 'none';
         document.getElementById('catElimresp').style.display = 'none';
         document.getElementById('CatelimRoles').style.display = 'block';
-
+        
         //--CONSULTAR
         document.getElementById('catconsulcorreo').style.display = 'none';
         document.getElementById('catconsulempresa').style.display = 'none';

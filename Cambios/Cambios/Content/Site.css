@@ -5,7 +5,6 @@
     padding: 0px;
     border: 0px;
 }
-
 .container {
     width: auto;
     margin: 0px;
@@ -14,28 +13,48 @@
 .nav {
     padding-left: 1000px;
 }
-
 #piepag {
     background-color: black;
     padding: 20px;
 }
-
 #piepag p {
     text-align: center;
     color: white;
 }
-
 body {
     font-family: "Lato", sans-serif;
 }
-
-
+label {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    border-bottom: none;
+    margin-top: 10px;
+}
+.titles {
+    font-family: "Lato";
+    font-size: 23px;
+    margin-top:35px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.titlesprin {
+    font-family: "Lato";
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top:0px;
+}
+.titlessecund {
+    font-family: "Lato";
+    font-size: 19px;
+    margin-top: 35px;
+    margin-bottom:20px;
+    border-bottom: 1px solid #e5e5e5;
+}
 /*PANTALLA DE LOGIN*/
 .main-head {
     height: 250px;
     background: #FFF;
 }
-
 .sidenav {
     height: 120%;
     background-image: url(../img/business.jpg);
@@ -108,8 +127,6 @@ body {
     margin-left: 250px;
     margin-top: 55px;
 }
-
-
 /*PANTALLA DE CAMBIOS*/
 
 #tito {
@@ -157,17 +174,11 @@ body {
     box-shadow: 7px 10px #878585;
 }
 
-#contform legend {
-    margin-top: 30px;
-}
-
 #contform input {
     margin-right: 10px;
-    }
-#contform label {
-    margin-top:12px;
-    }
-#causa {
+}
+
+.causa {
     margin-top: 40px;
 }
 
@@ -212,20 +223,15 @@ body {
     padding-right: 25px;
     box-shadow: 7px 10px #878585;
 }
-    #formPrinmod legend {
-        margin-top: 10px;
-    }
 
-    #formPrinmod input {
-        margin-right: 10px;
-    }
+#formPrinmod input {
+    margin-right: 10px;
+}
+
 #titIde input, #titIde label {
     margin-left: 15px;
+}
 
-}
-#formPrinmod label {
-    margin-top: 12px;
-}
 .btnmenu img {
     width:45px; 
     height:45px;
@@ -257,7 +263,7 @@ body {
     padding-left: 35px;
 }
 
-#formModific, #formCons, #formUser {
+.formModific, #formCons, #formUser {
     background-image: url(../img/man.jpg);
     background-size: cover;
     background-position: center center;
@@ -267,24 +273,15 @@ body {
 #formMod {
     display:none;
 }
-#txtIdticket {
-    width:340px;
+#txtmodIdticket , #txtmodIdAccion, #txtIdAccion{
+    width: 340px;
 }
 
-#formMod legend {
-    margin-top: 20px;
+#formMod input {
+    margin-right: 10px;
 }
 
-    #formMod input {
-        margin-right: 10px;
-
-    }
-
-    #formMod label {
-        margin-top: 12px;
-    }
-
-#causa {
+.causa {
     margin-top: 40px;
 }
 
@@ -322,29 +319,21 @@ body {
 #formDelete {
     display: none;
 }
-#formDelete legend {
-    margin-top: 50px;
- }
 
 #formDelete input {
-     margin-right: 10px;
-     width: 417px;
+    margin-right: 10px;
+    width: 417px;
 }
 
-#formDelete label {
-    margin-top: 12px;
-}
-
-#btnLimp , #btnBuscar {
+#btnLimp , .btnBuscar {
     background-color: black;
-    margin-top: 70px;
     margin-left: 130px;
     padding-right: 30px;
     padding-left: 30px;
     color: white;
 }
 
-#btnLimp:hover, #btnBuscar:hover{
+#btnLimp:hover, .btnBuscar:hover{
    -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
    -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
     box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
@@ -366,7 +355,7 @@ body {
  }
  /*BUSQUEDA DE CAMBIOS*/
 
-#formConsul legend {
+#formConsul label {
     margin-top:40px;
 }
 #Buscador {
@@ -376,16 +365,11 @@ body {
 #txtBusqueda{
     width:430px;
 }
-#btnBuscar {
-    margin-top:1px;
-    margin-left:0px;
-}
 #labCambio {
     margin-top: 7px;
 }
 
 /*REGISTRO DE USUARIOS & PERSONAS*/
-
 
 #formConsul, #formCrear, #CreaUser, #crealogin, #modPersona, #modusuario, #formConsulusers, #elimiusu {
     display: none;
@@ -393,46 +377,36 @@ body {
 
 #colum6 {
     margin-left: 310px;
-    margin-top: 40px;
-}
-#modcol12 {
-    margin-bottom: 100px;
-}
-#colmd6 {
-    margin-left: 310px;
-    margin-top: 40px;
-}
-#secuser label {
-    margin-top: 12px;
-}
-#secuser legend {
-    margin-top: 20px;
-}
-#colsix {
-    margin-left: 320px;
-    margin-top: 70px;
-}
-/*Botones*/
-#btnSave, #btnSigu, #btnContinuar, #lvaciar, #btnsav, #btncont, #btnregres, #btnli, #btngua, #btnVaciar ,#btnEliminar {
-   background-color: black;
-   margin-top: 70px;
-   margin-left: 5px;
-   padding-right: 25px;
-   padding-left: 25px;
-   color: white;
 }
 
- #btnSave:hover, #btnSigu:hover, #btnContinuar:hover, #lvaciar:hover, #btnsav:hover, #btncont:hover, #btnregres:hover, #btnli:hover, #btngua:hover, #btnVaciar:hover, #btnEliminar:hover {
+#colmd6 {
+    margin-left: 310px;
+}
+
+#colsix {
+    margin-left: 320px;
+}
+/*Botones*/
+#btnSave, #btnSigu, #btnContinuar, #lvaciar, #btnsav, #btncont, #btnregres, #btnli, #btngua, #btnVaciar, #btnEliminar, #btnmodcont {
+    background-color: black;
+    margin-top: 70px;
+    margin-left: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+}
+
+#btnSave:hover, #btnSigu:hover, #btnContinuar:hover, #lvaciar:hover, #btnsav:hover, #btncont:hover, #btnregres:hover, #btnli:hover, #btngua:hover, #btnVaciar:hover, #btnEliminar:hover, #btnmodcont {
     -webkit-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
     -moz-box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
      box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
- }
+}
 
 #btnContinuar, #btnregres, #btnVaciar {
     margin-left: 600px;
 }
-#btnSigu, #btncont {
-    margin-left: 1100px;
+#btnSigu, #btnmodcont {
+    float: right;
 }
 #btnVaciar {
     margin-left: 750px;
@@ -474,14 +448,14 @@ body {
     display: none;
 }
 /*CONSULTAS DE CATALOGOS*/
-#catconsulcorreo, #catconsulempresa, #catconsulmesa, #catconsulcat, #catconsultipo, #catconsulestado, #catconsulprioridad, #catconsulaccticket, #catconsulAproticket, #catconsresp, #CateconsRoles{
+#catconsulcorreo, #catconsulempresa, #catconsulmesa, #catconsulcat, #catconsultipo, #catconsulestado, #catconsulprioridad, #catconsulaccticket, #catconsulAproticket, #catconsresp, #CateconsRoles {
     display: none;
 }
 
 /*DISEÑO DE PANTALLAS DE CATALOGOS*/
 .catal {
     margin-left: 300px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .btncat {
     color: white;
@@ -498,6 +472,9 @@ body {
     border: 1px solid #898483;
     min-width: 110px;
     box-shadow: 0px 6px 33px 0px rgba(0,0,0,0.50);
+}
+table {
+    margin-top:100px;
 }
 /*APROBACIONES*/
 #formCrearAprobacion, #formModAprobacion, #formElimapro, #formConsulapro {
